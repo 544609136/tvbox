@@ -1,21 +1,29 @@
 {
  "urls": [
   {
-   "name": "① 新版·精简（推荐）·已实测去重",
+   "name": "① 合并仓·762站（点播+成人+特殊功能，推荐）",
+   "url": "https://gh-proxy.org/https://raw.githubusercontent.com/544609136/tvbox/main/cur/combo.json"
+  },
+  {
+   "name": "② 精简·50站（只要纯净点播）",
    "url": "https://gh-proxy.org/https://raw.githubusercontent.com/544609136/tvbox/main/cur/vod_slim.json"
   },
   {
-   "name": "② 新版·完整（全部可播源）",
+   "name": "③ 完整·147站（全部可播点播源）",
    "url": "https://gh-proxy.org/https://raw.githubusercontent.com/544609136/tvbox/main/cur/vod_full.json"
   },
   {
-   "name": "③ 旧版·5646站（降级备份）",
+   "name": "④ 直播·10个清单",
+   "url": "https://gh-proxy.org/https://raw.githubusercontent.com/544609136/tvbox/main/cur/live.json"
+  },
+  {
+   "name": "⑤ 旧版·5646站（降级备份）",
    "url": "https://gh-proxy.org/https://raw.githubusercontent.com/544609136/tvbox/main/backup/single.json"
   },
   {
-   "name": "④ 旧版·6033站（降级备份）",
+   "name": "⑥ 旧版·6033站（降级备份）",
    "url": "https://gh-proxy.org/https://raw.githubusercontent.com/544609136/tvbox/main/backup/single_full.json"
   }
  ],
- "warningText": "国内镜像 gh-proxy.org。新版在前，拉不动会自动落到后面的备份源；备份源仅作兜底，不保证时效。"
+ "warningText": "国内镜像 gh-proxy.org。①是主推的合并仓（含 P2P/磁力/网盘/盘搜/推送）；②③只要纯点播时用；⑤⑥ 是降级备份，仅作兜底。"
 }
