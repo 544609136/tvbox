@@ -39,7 +39,7 @@ code{background:#1d2129;padding:1px 6px;border-radius:4px;font-family:ui-monospa
 footer{color:var(--dim);font-size:12px;margin-top:36px;padding-top:16px;border-top:1px solid var(--line)}
 </style></head><body>
 <h1>点播源 / 直播源 整理报告</h1>
-<div class="sub">全部结论来自实测（TCP/TTFB 时延 + 真·分片吞吐 + 线路连通抽样）　生成于 2026-10-15 00:00</div>
+<div class="sub">全部结论来自实测（TCP/TTFB 时延 + 真·分片吞吐 + 线路连通抽样）　生成于 2026-10-15 01:04</div>
 
 <div class="cards">
   <div class="card"><div class="v">50</div><div class="k">点播站（推荐版·已去重）</div></div>
@@ -79,7 +79,38 @@ footer{color:var(--dim);font-size:12px;margin-top:36px;padding-top:16px;border-t
 ——16 个上游挤在一个 host 上，单点一挂全灭，且多一跳延迟（成人站同样豁免，不剔除）。
 </div>
 
-<h2>三、点播源（推荐版 50 站，按吞吐排序）</h2>
+<h2>三、合并仓（762 站 = 点播 + 成人标记 + 特殊功能）</h2>
+<div class="cards">
+  <div class="card"><div class="v">762</div><div class="k">合并仓站点总数</div></div>
+  <div class="card"><div class="v">615</div><div class="k">特殊功能站（type 3）</div></div>
+  <div class="card"><div class="v">147</div><div class="k">点播采集站（type 1）</div></div>
+  <div class="card"><div class="v">241</div><div class="k">spider jar 内置类覆盖（92%）</div></div>
+  <div class="card"><div class="v">772</div><div class="k">站+直播（上限 1000）</div></div>
+</div>
+<table><tr><th>特殊功能类别</th><th class=n>数量</th><th>例子</th></tr>
+<tr><td>特殊功能</td><td class=n>185</td><td>其它网盘/P2P/搜索类</td></tr>
+<tr><td>4K·弹幕</td><td class=n>130</td><td>玩偶哥哥┃4K弹幕、4K指南</td></tr>
+<tr><td>磁力·P2P</td><td class=n>128</td><td>荐片┃P2P、新6V┃磁力、美剧迷、迅雷吧</td></tr>
+<tr><td>网盘·搜索</td><td class=n>61</td><td>盘搜、大盘搜、趣盘搜、夸克盘搜、TG搜索</td></tr>
+<tr><td>网盘·分享</td><td class=n>46</td><td>夸克分享、阿里分享、115分享、UC分享、迅雷分享、PikPak</td></tr>
+<tr><td>推送·投屏</td><td class=n>28</td><td>手机┃推送、推送接收</td></tr>
+<tr><td>AList·市场</td><td class=n>14</td><td>AList┃网盘、网盘市场</td></tr>
+<tr><td>特殊功能·需补类</td><td class=n>14</td><td>jar 里暂无对应内置类，仍保留</td></tr>
+<tr><td>⚙️ 配置工具</td><td class=n>5</td><td>—</td></tr>
+<tr><td>🐍 移植插件</td><td class=n>2</td><td>—</td></tr>
+<tr><td>📤 群传插件</td><td class=n>1</td><td>—</td></tr>
+</table>
+<div class="note">
+<b>依赖是关键</b>：所有 type 3 站都靠顶层 <code>spider</code> 指向的 jar 提供内置类。
+一开始编排配置里**根本没有 spider 字段** → 所有特殊功能站都跑不起来。
+现在用 <code>cur/spider_special.jar</code>（25.47 MB，自建 multi-dex，
+覆盖 <b>241/273</b> 个内置类 = <b>92% 的 type3 站可跑</b>），
+并写进 combo.json 的 <code>spider</code> 字段（相对路径，jar 必须与 json 同级）。
+<br>缺类的 14 个站<b>仍然保留</b>（分组标为「特殊功能·需补类」），
+不因为缺类就删 —— 要不要留由你决定。
+</div>
+
+<h2>四、点播源（推荐版 50 站，按吞吐排序）</h2>
 <table>
 <tr><th>#</th><th>名称</th><th class=n>首片时延</th><th class=n>实测吞吐</th>
 <th class=n>分片成功</th><th class=n>直链</th><th>采集接口</th></tr>
@@ -138,7 +169,7 @@ footer{color:var(--dim);font-size:12px;margin-top:36px;padding-top:16px;border-t
 「解析」类靠 TVBox 内置的 m3u8 解析，能用但多一层变量。
 名称带 <code>**</code> 前缀的是<b>成人疑似源</b>（已保留，未删除），自行判断。</div>
 
-<h2>四、直播源</h2>
+<h2>五、直播源</h2>
 <div class="cards">
 <div class="card"><div class="v">268</div><div class="k">地方/其他</div></div><div class="card"><div class="v">112</div><div class="k">省级卫视</div></div><div class="card"><div class="v">55</div><div class="k">央视 CCTV</div></div><div class="card"><div class="v">20</div><div class="k">港澳台</div></div>
 </div>
@@ -227,7 +258,7 @@ footer{color:var(--dim);font-size:12px;margin-top:36px;padding-top:16px;border-t
 <tr><td>60</td><td>东南卫视·线路2</td><td class=m>http://live.zohi.tv/video/s10001-fztv-3/index.m3u8</td></tr>
 </table></div>
 
-<h2>五、怎么用</h2>
+<h2>六、怎么用</h2>
 <div class="note">
 <b>TVBox / 影视仓（推荐）</b>：设置 → 配置地址 → 填多仓入口
 <br><code>https://gh-proxy.org/https://raw.githubusercontent.com/544609136/tvbox/main/multi_cn.json</code>
@@ -245,7 +276,7 @@ footer{color:var(--dim);font-size:12px;margin-top:36px;padding-top:16px;border-t
 </div>
 <div class="note warn">
 <b>已知限制</b>：<br>
-· 站点可用性随上游采集接口变化，本报告是 2026-10-15 00:00 的快照，不保证长期有效。<br>
+· 站点可用性随上游采集接口变化，本报告是 2026-10-15 01:04 的快照，不保证长期有效。<br>
 · 已按名称特征<b>标记</b>成人疑似源（加 <code>**</code> 前缀 + <code>adultFlag:true</code> 字段），
 但<b>一律保留、不做删除</b> —— 是否成人由你自己判断。标记有误伤可能
 （实测同一 host 两条一标一不标），仅作提示，请自行复核。<br>
