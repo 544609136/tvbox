@@ -39,7 +39,7 @@ code{background:#1d2129;padding:1px 6px;border-radius:4px;font-family:ui-monospa
 footer{color:var(--dim);font-size:12px;margin-top:36px;padding-top:16px;border-top:1px solid var(--line)}
 </style></head><body>
 <h1>点播源 / 直播源 整理报告</h1>
-<div class="sub">全部结论来自实测（TCP/TTFB 时延 + 真·分片吞吐 + 线路连通抽样）　生成于 2026-10-15 01:04</div>
+<div class="sub">全部结论来自实测（TCP/TTFB 时延 + 真·分片吞吐 + 线路连通抽样）　生成于 2026-10-15 01:29</div>
 
 <div class="cards">
   <div class="card"><div class="v">50</div><div class="k">点播站（推荐版·已去重）</div></div>
@@ -100,6 +100,12 @@ footer{color:var(--dim);font-size:12px;margin-top:36px;padding-top:16px;border-t
 <tr><td>🐍 移植插件</td><td class=n>2</td><td>—</td></tr>
 <tr><td>📤 群传插件</td><td class=n>1</td><td>—</td></tr>
 </table>
+<div class="note">
+<b>排序</b>：数组顺序 = TVBox 界面顺序 ——
+<b>点播放最前</b>（147 站，按首片延迟升序，最快的在最上面），
+后面才是特殊功能（网盘分享 → 网盘搜索 → 磁力P2P → 推送 → 4K弹幕 → AList），
+<b>缺类的垫最后</b>。常用功能不用翻。
+</div>
 <div class="note">
 <b>依赖是关键</b>：所有 type 3 站都靠顶层 <code>spider</code> 指向的 jar 提供内置类。
 一开始编排配置里**根本没有 spider 字段** → 所有特殊功能站都跑不起来。
@@ -276,7 +282,7 @@ footer{color:var(--dim);font-size:12px;margin-top:36px;padding-top:16px;border-t
 </div>
 <div class="note warn">
 <b>已知限制</b>：<br>
-· 站点可用性随上游采集接口变化，本报告是 2026-10-15 01:04 的快照，不保证长期有效。<br>
+· 站点可用性随上游采集接口变化，本报告是 2026-10-15 01:29 的快照，不保证长期有效。<br>
 · 已按名称特征<b>标记</b>成人疑似源（加 <code>**</code> 前缀 + <code>adultFlag:true</code> 字段），
 但<b>一律保留、不做删除</b> —— 是否成人由你自己判断。标记有误伤可能
 （实测同一 host 两条一标一不标），仅作提示，请自行复核。<br>
