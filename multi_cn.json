@@ -1,1 +1,21 @@
-{"urls":[{"name":"① 整合·5646站 (推荐·依赖齐全) · 国内镜像","url":"https://gh-proxy.org/https://raw.githubusercontent.com/544609136/tvbox/main/single.json"},{"name":"② 整合·6033站 (完整·含失效项) · 国内镜像","url":"https://gh-proxy.org/https://raw.githubusercontent.com/544609136/tvbox/main/single_full.json"},{"name":"③ 精选可播·18站 (已实测) · 国内镜像","url":"https://gh-proxy.org/https://raw.githubusercontent.com/544609136/tvbox/main/jingxuan.json"}],"warningText":"国内镜像（gh-proxy.org）。若失效，改用仓库里的 multi.json（raw 直连）。"}
+{
+ "urls": [
+  {
+   "name": "① 新版·精简（推荐）·已实测去重",
+   "url": "https://gh-proxy.org/https://raw.githubusercontent.com/544609136/tvbox/main/cur/vod_slim.json"
+  },
+  {
+   "name": "② 新版·完整（全部可播源）",
+   "url": "https://gh-proxy.org/https://raw.githubusercontent.com/544609136/tvbox/main/cur/vod_full.json"
+  },
+  {
+   "name": "③ 旧版·5646站（降级备份）",
+   "url": "https://gh-proxy.org/https://raw.githubusercontent.com/544609136/tvbox/main/backup/single.json"
+  },
+  {
+   "name": "④ 旧版·6033站（降级备份）",
+   "url": "https://gh-proxy.org/https://raw.githubusercontent.com/544609136/tvbox/main/backup/single_full.json"
+  }
+ ],
+ "warningText": "国内镜像 gh-proxy.org。新版在前，拉不动会自动落到后面的备份源；备份源仅作兜底，不保证时效。"
+}

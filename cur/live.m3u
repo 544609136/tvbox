@@ -1,0 +1,1366 @@
+#EXTM3U
+#EXTINF:-1 group-title="直播",CCTV1
+#EXTVLCOPT:http-referrer=
+https://gcalic.v.myalicdn.com/gc/ztn_1/index.m3u8
+#EXTINF:-1 group-title="直播",CCTV1·线路2
+#EXTVLCOPT:http-referrer=
+https://gcalic.v.myalicdn.com/gc/ztd_1/index.m3u8
+#EXTINF:-1 group-title="直播",CCTV1·线路3
+#EXTVLCOPT:http-referrer=
+https://live.264788.xyz/channel/diyijuchang?streamid=e9b0fb1ca135a4aeae12944494883794&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
+#EXTINF:-1 group-title="直播",CCTV10
+#EXTVLCOPT:http-referrer=
+https://cdn4.skygo.mn/live/disk1/CCTV-10/HLSv3-FTA/CCTV-10.m3u8
+#EXTINF:-1 group-title="直播",CCTV10·线路2
+#EXTVLCOPT:http-referrer=
+http://204.12.221.218:8181/3m1080p/cctv10.m3u8
+#EXTINF:-1 group-title="直播",CCTV10·线路3
+#EXTVLCOPT:http-referrer=
+http://69.30.245.50/live/cctv10.m3u8
+#EXTINF:-1 group-title="直播",CCTV11
+#EXTVLCOPT:http-referrer=
+http://198.204.228.26/live/cctv11hd.m3u8
+#EXTINF:-1 group-title="直播",CCTV11·线路2
+#EXTVLCOPT:http-referrer=
+http://204.12.221.218:8181/3m1080p/cctv11.m3u8
+#EXTINF:-1 group-title="直播",CCTV11·线路3
+#EXTVLCOPT:http-referrer=
+http://38.75.136.137:98/gslb/dsdqpub/cctv11hd.m3u8?auth=testpub
+#EXTINF:-1 group-title="直播",CCTV12
+#EXTVLCOPT:http-referrer=
+http://74.91.26.218:82/live/cctv12hd.m3u8
+#EXTINF:-1 group-title="直播",CCTV12·线路2
+#EXTVLCOPT:http-referrer=
+http://38.75.136.137:98/gslb/dsdqpub/cctv12hd.m3u8?auth=testpub
+#EXTINF:-1 group-title="直播",CCTV12·线路3
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/cctv12hd.m3u8
+#EXTINF:-1 group-title="直播",CCTV13
+#EXTVLCOPT:http-referrer=
+http://120.76.248.139/live/bfgd/4200000067.m3u8
+#EXTINF:-1 group-title="直播",CCTV13·线路2
+#EXTVLCOPT:http-referrer=
+http://ali-m-l.cztv.com/channels/lantian/channel21/1080p.m3u8
+#EXTINF:-1 group-title="直播",CCTV13·线路3
+#EXTVLCOPT:http-referrer=
+http://74.91.26.218:82/live/cctv13hd.m3u8
+#EXTINF:-1 group-title="直播",CCTV14
+#EXTVLCOPT:http-referrer=
+http://74.91.26.218:82/live/cctv14hd.m3u8
+#EXTINF:-1 group-title="直播",CCTV14·线路2
+#EXTVLCOPT:http-referrer=
+http://198.204.228.26/live/cctv14hd.m3u8
+#EXTINF:-1 group-title="直播",CCTV14·线路3
+#EXTVLCOPT:http-referrer=
+http://204.12.221.218:8181/3m1080p/cctv14.m3u8
+#EXTINF:-1 group-title="直播",CCTV15
+#EXTVLCOPT:http-referrer=
+http://gmxw.7766.org:808/hls/102/index.m3u8
+#EXTINF:-1 group-title="直播",CCTV15·线路2
+#EXTVLCOPT:http-referrer=
+http://74.91.26.218:82/live/cctv15hd.m3u8
+#EXTINF:-1 group-title="直播",CCTV15·线路3
+#EXTVLCOPT:http-referrer=
+http://198.204.228.26/live/cctv15hd.m3u8
+#EXTINF:-1 group-title="直播",CCTV16
+#EXTVLCOPT:http-referrer=
+http://gmxw.7766.org:808/hls/169/index.m3u8
+#EXTINF:-1 group-title="直播",CCTV16·线路2
+#EXTVLCOPT:http-referrer=
+http://38.75.136.137:98/gslb/dsdqpub/cctv16hd.m3u8?auth=testpub
+#EXTINF:-1 group-title="直播",CCTV16·线路3
+#EXTVLCOPT:http-referrer=
+http://38.75.136.137:98/gslb/dsdqbv/cctv16hd.m3u8?auth=test20251009
+#EXTINF:-1 group-title="直播",CCTV17
+#EXTVLCOPT:http-referrer=
+http://38.75.136.137:98/gslb/dsdqbv/cctv17hd.m3u8?auth=test20251009
+#EXTINF:-1 group-title="直播",CCTV17·线路2
+#EXTVLCOPT:http-referrer=
+https://live.264788.xyz/channel/cctv17?streamid=348c8c0c04a6d2b900e5a3bcb4af8ce1&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
+#EXTINF:-1 group-title="直播",CCTV17·线路3
+#EXTVLCOPT:http-referrer=
+https://live.264788.xyz/channel/cctv17?streamid=f9c36f1e95b5b35eac89cc89583e7c0a&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
+#EXTINF:-1 group-title="直播",CCTV2
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/cctv2hd.m3u8
+#EXTINF:-1 group-title="直播",CCTV2·线路2
+#EXTVLCOPT:http-referrer=
+http://198.204.228.26/live/cctv2hd.m3u8
+#EXTINF:-1 group-title="直播",CCTV2·线路3
+#EXTVLCOPT:http-referrer=
+http://192.151.150.154/live/cctv2hd.m3u8
+#EXTINF:-1 group-title="直播",CCTV3
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/cctv3hd.m3u8
+#EXTINF:-1 group-title="直播",CCTV3·线路2
+#EXTVLCOPT:http-referrer=
+http://69.30.245.50/live/cctv3.m3u8
+#EXTINF:-1 group-title="直播",CCTV3·线路3
+#EXTVLCOPT:http-referrer=
+http://74.91.26.218:82/live/cctv3hd.m3u8
+#EXTINF:-1 group-title="直播",CCTV4
+#EXTVLCOPT:http-referrer=
+http://173.208.212.130:8181/1080p/cctv4.m3u8
+#EXTINF:-1 group-title="直播",CCTV4·线路2
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/cctv4hd.m3u8
+#EXTINF:-1 group-title="直播",CCTV4·线路3
+#EXTVLCOPT:http-referrer=
+http://74.91.26.218:82/live/cctv4hd.m3u8
+#EXTINF:-1 group-title="直播",CCTV4ASIA
+#EXTVLCOPT:http-referrer=
+http://74.91.26.218:82/live/cctv4hd.m3u8
+#EXTINF:-1 group-title="直播",CCTV5
+#EXTVLCOPT:http-referrer=
+http://173.208.212.130:8181/720p/cctv5.m3u8
+#EXTINF:-1 group-title="直播",CCTV5·线路2
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/cctv5hd.m3u8
+#EXTINF:-1 group-title="直播",CCTV5·线路3
+#EXTVLCOPT:http-referrer=
+http://38.75.136.137:98/gslb/dsdqpub/cctv5p.m3u8?auth=testpub
+#EXTINF:-1 group-title="直播",CCTV5+
+#EXTVLCOPT:http-referrer=
+http://120.76.248.139/live/bfgd/4200000246.m3u8
+#EXTINF:-1 group-title="直播",CCTV5+·线路2
+#EXTVLCOPT:http-referrer=
+http://223.78.65.165:9901/tsfile/live/0006_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="直播",CCTV5+·线路3
+#EXTVLCOPT:http-referrer=
+http://38.75.136.137:98/gslb/dsdqbv/cctv5p.m3u8?auth=test20251009
+#EXTINF:-1 group-title="直播",CCTV6
+#EXTVLCOPT:http-referrer=
+http://198.204.228.26/live/cctv6hd.m3u8
+#EXTINF:-1 group-title="直播",CCTV6·线路2
+#EXTVLCOPT:http-referrer=
+http://69.30.245.50/live/cctv6.m3u8
+#EXTINF:-1 group-title="直播",CCTV6·线路3
+#EXTVLCOPT:http-referrer=
+http://74.91.26.218:82/live/cctv6hd.m3u8
+#EXTINF:-1 group-title="直播",CCTV7
+#EXTVLCOPT:http-referrer=
+http://74.91.26.218:82/live/cctv7hd.m3u8
+#EXTINF:-1 group-title="直播",CCTV7·线路2
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/cctv7hd.m3u8
+#EXTINF:-1 group-title="直播",CCTV7·线路3
+#EXTVLCOPT:http-referrer=
+http://69.30.245.50/live/cctv7.m3u8
+#EXTINF:-1 group-title="直播",CCTV8
+#EXTVLCOPT:http-referrer=
+http://124.165.251.82:85/tsfile/live/0008_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="直播",CCTV8·线路2
+#EXTVLCOPT:http-referrer=
+http://207.56.13.146:81/cdnlive/cctv8.m3u8
+#EXTINF:-1 group-title="直播",CCTV8·线路3
+#EXTVLCOPT:http-referrer=
+http://74.91.26.218:82/live/cctv8hd.m3u8
+#EXTINF:-1 group-title="直播",CCTV9
+#EXTVLCOPT:http-referrer=
+http://192.151.150.154/live/cctv9hd.m3u8
+#EXTINF:-1 group-title="直播",CCTV9·线路2
+#EXTVLCOPT:http-referrer=
+http://198.204.228.26/live/cctv9hd.m3u8
+#EXTINF:-1 group-title="直播",CCTV9·线路3
+#EXTVLCOPT:http-referrer=
+http://74.91.26.218:82/live/cctv9hd.m3u8
+#EXTINF:-1 group-title="直播",三沙卫视
+#EXTVLCOPT:http-referrer=
+http://198.204.228.26/live/ssws.m3u8
+#EXTINF:-1 group-title="直播",三沙卫视·线路2
+#EXTVLCOPT:http-referrer=
+http://38.75.136.137:98/gslb/dsdqpub/ssws.m3u8?auth=testpub
+#EXTINF:-1 group-title="直播",三沙卫视·线路3
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/ssws.m3u8
+#EXTINF:-1 group-title="直播",东南卫视
+#EXTVLCOPT:http-referrer=
+http://120.76.248.139/live/bfgd/4200000483.m3u8
+#EXTINF:-1 group-title="直播",东南卫视·线路2
+#EXTVLCOPT:http-referrer=
+http://live.zohi.tv/video/s10001-fztv-3/index.m3u8
+#EXTINF:-1 group-title="直播",东南卫视·线路3
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/dnwshd.m3u8
+#EXTINF:-1 group-title="直播",东方卫视
+#EXTVLCOPT:http-referrer=
+https://bp-resource-dfl.bestv.cn/148/3/video.m3u8
+#EXTINF:-1 group-title="直播",东方卫视·线路2
+#EXTVLCOPT:http-referrer=
+http://bp-resource-dfl.bestv.cn/155/3/video.m3u8
+#EXTINF:-1 group-title="直播",东方卫视·线路3
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/dfwshd.m3u8
+#EXTINF:-1 group-title="直播",云南卫视
+#EXTVLCOPT:http-referrer=
+http://120.76.248.139/live/bfgd/4200000482.m3u8
+#EXTINF:-1 group-title="直播",云南卫视·线路2
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/ynwshd.m3u8
+#EXTINF:-1 group-title="直播",云南卫视·线路3
+#EXTVLCOPT:http-referrer=
+http://192.151.150.154/live/ynwshd.m3u8
+#EXTINF:-1 group-title="直播",人间卫视
+#EXTVLCOPT:http-referrer=
+https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/chunklist_w511254805.m3u8
+#EXTINF:-1 group-title="直播",内蒙古卫视
+#EXTVLCOPT:http-referrer=
+http://play1-qk.nmtv.cn/live/1769652018126032.m3u8
+#EXTINF:-1 group-title="直播",内蒙古卫视·线路2
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/nmgws.m3u8
+#EXTINF:-1 group-title="直播",内蒙古卫视·线路3
+#EXTVLCOPT:http-referrer=
+https://live.264788.xyz/channel/neimengguweishi?streamid=81a015dbecf3031d7d847b7a9b059f67&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
+#EXTINF:-1 group-title="直播",凤凰卫视
+#EXTVLCOPT:http-referrer=
+https://7612-5516-affc-d88b.kylintv.tv/live/pxinhd_iphone.m3u8
+#EXTINF:-1 group-title="直播",北京卫视
+#EXTVLCOPT:http-referrer=
+http://120.76.248.139/live/bfgd/4200000083.m3u8
+#EXTINF:-1 group-title="直播",北京卫视·线路2
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/bjwshd.m3u8
+#EXTINF:-1 group-title="直播",北京卫视·线路3
+#EXTVLCOPT:http-referrer=
+http://38.75.136.137:98/gslb/dsdqbv/bjwshd.m3u8?auth=test20251009
+#EXTINF:-1 group-title="直播",厦门卫视
+#EXTVLCOPT:http-referrer=
+http://198.204.228.26/live/xmws.m3u8
+#EXTINF:-1 group-title="直播",厦门卫视·线路2
+#EXTVLCOPT:http-referrer=
+http://192.151.150.154/live/xmws.m3u8
+#EXTINF:-1 group-title="直播",厦门卫视·线路3
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/xmws.m3u8
+#EXTINF:-1 group-title="直播",吉林卫视
+#EXTVLCOPT:http-referrer=
+http://38.75.136.137:98/gslb/dsdqpub/jlwshd.m3u8?auth=testpub
+#EXTINF:-1 group-title="直播",吉林卫视·线路2
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/jlwshd.m3u8
+#EXTINF:-1 group-title="直播",吉林卫视·线路3
+#EXTVLCOPT:http-referrer=
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=jlwshd
+#EXTINF:-1 group-title="直播",四川卫视
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/scwshd.m3u8
+#EXTINF:-1 group-title="直播",四川卫视·线路2
+#EXTVLCOPT:http-referrer=
+http://38.75.136.137:98/gslb/dsdqpub/scwshd.m3u8?auth=testpub
+#EXTINF:-1 group-title="直播",四川卫视·线路3
+#EXTVLCOPT:http-referrer=
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=scwshd
+#EXTINF:-1 group-title="直播",大湾区卫视
+#EXTVLCOPT:http-referrer=
+http://222.128.55.152:9080/live/dwq.m3u8
+#EXTINF:-1 group-title="直播",大湾区卫视·线路2
+#EXTVLCOPT:http-referrer=
+http://38.75.136.137:98/gslb/dsdqpub/nfws.m3u8?auth=testpub
+#EXTINF:-1 group-title="直播",大湾区卫视·线路3
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/nfws.m3u8
+#EXTINF:-1 group-title="直播",天津卫视
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/tjwshd.m3u8
+#EXTINF:-1 group-title="直播",天津卫视·线路2
+#EXTVLCOPT:http-referrer=
+http://38.75.136.137:98/gslb/dsdqpub/tjwshd.m3u8?auth=testpub
+#EXTINF:-1 group-title="直播",天津卫视·线路3
+#EXTVLCOPT:http-referrer=
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=tjwshd
+#EXTINF:-1 group-title="直播",宁夏卫视
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/nxws.m3u8
+#EXTINF:-1 group-title="直播",宁夏卫视·线路2
+#EXTVLCOPT:http-referrer=
+http://198.204.228.26/live/nxws.m3u8
+#EXTINF:-1 group-title="直播",宁夏卫视·线路3
+#EXTVLCOPT:http-referrer=
+https://live.264788.xyz/channel/ningxiaweishi?streamid=e1236348f815c36a0429357e5b5c5f10&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
+#EXTINF:-1 group-title="直播",安多卫视
+#EXTVLCOPT:http-referrer=
+https://liveout.xntv.tv/a65jur/96iln2.m3u8
+#EXTINF:-1 group-title="直播",安徽卫视
+#EXTVLCOPT:http-referrer=
+http://gmxw.7766.org:808/hls/40/index.m3u8
+#EXTINF:-1 group-title="直播",安徽卫视·线路2
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/ahwshd.m3u8
+#EXTINF:-1 group-title="直播",安徽卫视·线路3
+#EXTVLCOPT:http-referrer=
+http://198.204.228.26/live/ahwshd.m3u8
+#EXTINF:-1 group-title="直播",山东卫视
+#EXTVLCOPT:http-referrer=
+http://120.76.248.139/live/bfgd/4200000099.m3u8
+#EXTINF:-1 group-title="直播",山东卫视·线路2
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/sdwshd.m3u8
+#EXTINF:-1 group-title="直播",山东卫视·线路3
+#EXTVLCOPT:http-referrer=
+http://38.75.136.137:98/gslb/dsdqpub/sdwshd.m3u8?auth=testpub
+#EXTINF:-1 group-title="直播",山西卫视
+#EXTVLCOPT:http-referrer=
+http://119.39.9.8:9901/tsfile/live/0118_1.m3u8
+#EXTINF:-1 group-title="直播",山西卫视·线路2
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/sxwshd.m3u8
+#EXTINF:-1 group-title="直播",山西卫视·线路3
+#EXTVLCOPT:http-referrer=
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=sxwshd
+#EXTINF:-1 group-title="直播",广东卫视
+#EXTVLCOPT:http-referrer=
+https://txmov2.a.kwimgs.com/upic/2023/01/26/09/BMjAyMzAxMjYwOTE3NDVfNzM5MzQzNzIyXzk0NjI1OTUwNTA3XzBfMw==_b_B81ddda927d33445d544befd008e60109.mp4
+#EXTINF:-1 group-title="直播",广东卫视·线路2
+#EXTVLCOPT:http-referrer=
+http://120.76.248.139/live/bfgd/4200000092.m3u8
+#EXTINF:-1 group-title="直播",广东卫视·线路3
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/gdwshd.m3u8
+#EXTINF:-1 group-title="直播",广西卫视
+#EXTVLCOPT:http-referrer=
+http://120.76.248.139/live/bfgd/4200000116.m3u8
+#EXTINF:-1 group-title="直播",广西卫视·线路2
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/gxwshd.m3u8
+#EXTINF:-1 group-title="直播",广西卫视·线路3
+#EXTVLCOPT:http-referrer=
+http://198.204.228.26/live/gxwshd.m3u8
+#EXTINF:-1 group-title="直播",延边卫视
+#EXTVLCOPT:http-referrer=
+http://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8#
+#EXTINF:-1 group-title="直播",延边卫视·线路2
+#EXTVLCOPT:http-referrer=
+https://srs.iyb983.cn:443/video/CYS/index.m3u8
+#EXTINF:-1 group-title="直播",延边卫视·线路3
+#EXTVLCOPT:http-referrer=
+https://srs.iyb983.cn/video/CYS/index.m3u8
+#EXTINF:-1 group-title="直播",新疆卫视
+#EXTVLCOPT:http-referrer=
+http://218.84.12.186:8001/hls/main/playlist.m3u8?zxinjd;http://218.84.12.186:8001/hls/main/playlist.m3u8zxinjd
+#EXTINF:-1 group-title="直播",新疆卫视·线路2
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/xjws.m3u8
+#EXTINF:-1 group-title="直播",新疆卫视·线路3
+#EXTVLCOPT:http-referrer=
+http://198.204.228.26/live/xjws.m3u8
+#EXTINF:-1 group-title="直播",江苏卫视
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/jswshd.m3u8
+#EXTINF:-1 group-title="直播",江苏卫视·线路2
+#EXTVLCOPT:http-referrer=
+http://38.75.136.137:98/gslb/dsdqbv/jswshd.m3u8?auth=test20251009
+#EXTINF:-1 group-title="直播",江苏卫视·线路3
+#EXTVLCOPT:http-referrer=
+http://38.75.136.137:98/gslb/dsdqpub/jswshd.m3u8?auth=testpub
+#EXTINF:-1 group-title="直播",江西卫视
+#EXTVLCOPT:http-referrer=
+http://112.27.5.218:9901/tsfile/live/faacts/0138_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="直播",江西卫视·线路2
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/jxwshd.m3u8
+#EXTINF:-1 group-title="直播",江西卫视·线路3
+#EXTVLCOPT:http-referrer=
+http://38.75.136.137:98/gslb/dsdqpub/jxwshd.m3u8?auth=testpub
+#EXTINF:-1 group-title="直播",河北卫视
+#EXTVLCOPT:http-referrer=
+http://120.76.248.139/live/bfgd/4200000108.m3u8
+#EXTINF:-1 group-title="直播",河北卫视·线路2
+#EXTVLCOPT:http-referrer=
+https://event.pull.hebtv.com/live/live101.m3u8
+#EXTINF:-1 group-title="直播",河北卫视·线路3
+#EXTVLCOPT:http-referrer=
+http://38.75.136.137:98/gslb/dsdqpub/hewshd.m3u8?auth=testpub
+#EXTINF:-1 group-title="直播",河南卫视
+#EXTVLCOPT:http-referrer=
+http://111.59.139.82:11888/tsfile/live/0139_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="直播",河南卫视·线路2
+#EXTVLCOPT:http-referrer=
+http://173.208.212.130:8181/720p/haws.m3u8
+#EXTINF:-1 group-title="直播",河南卫视·线路3
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/hawshd.m3u8
+#EXTINF:-1 group-title="直播",浙江卫视
+#EXTVLCOPT:http-referrer=
+http://ali-m-l.cztv.com/channels/lantian/channel01/1080p.m3u8
+#EXTINF:-1 group-title="直播",浙江卫视·线路2
+#EXTVLCOPT:http-referrer=
+https://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8
+#EXTINF:-1 group-title="直播",浙江卫视·线路3
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/zjwshd.m3u8
+#EXTINF:-1 group-title="直播",海南卫视
+#EXTVLCOPT:http-referrer=
+http://120.76.248.139/live/bfgd/4200000473.m3u8
+#EXTINF:-1 group-title="直播",深圳卫视
+#EXTVLCOPT:http-referrer=
+http://120.76.248.139/live/bfgd/4200000100.m3u8
+#EXTINF:-1 group-title="直播",深圳卫视·线路2
+#EXTVLCOPT:http-referrer=
+http://38.64.72.148:80/hls/modn/list/4007/playlist.m3u8
+#EXTINF:-1 group-title="直播",深圳卫视·线路3
+#EXTVLCOPT:http-referrer=
+http://38.75.136.137:98/gslb/dsdqpub/szwshd.m3u8?auth=testpub
+#EXTINF:-1 group-title="直播",湖北卫视
+#EXTVLCOPT:http-referrer=
+http://120.76.248.139/live/bfgd/4200000102.m3u8
+#EXTINF:-1 group-title="直播",湖北卫视·线路2
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/hbwshd.m3u8
+#EXTINF:-1 group-title="直播",湖北卫视·线路3
+#EXTVLCOPT:http-referrer=
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=hbwshd
+#EXTINF:-1 group-title="直播",湖南卫视
+#EXTVLCOPT:http-referrer=
+https://txmov2.a.kwimgs.com/bs3/video-hls/5199687338554291078_hlsb.m3u8
+#EXTINF:-1 group-title="直播",湖南卫视·线路2
+#EXTVLCOPT:http-referrer=
+http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/dWlwPTEyNy4wLjAuMSZ1aWQ9cWluZy1jbXMmbm5fdGltZXpvbmU9OCZjZG5leF9pZD1hbF9obHNfbGR2dCZ1dWlkPTliODY4NmU5ZTM2YzYwMmMmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8
+#EXTINF:-1 group-title="直播",湖南卫视·线路3
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/hnwshd.m3u8
+#EXTINF:-1 group-title="直播",甘肃卫视
+#EXTVLCOPT:http-referrer=
+http://120.76.248.139/live/bfgd/4200000119.m3u8
+#EXTINF:-1 group-title="直播",甘肃卫视·线路2
+#EXTVLCOPT:http-referrer=
+http://218.13.170.98:9901/tsfile/live/0141_1.m3u8
+#EXTINF:-1 group-title="直播",甘肃卫视·线路3
+#EXTVLCOPT:http-referrer=
+http://38.75.136.137:98/gslb/dsdqpub/gswshd.m3u8?auth=testpub
+#EXTINF:-1 group-title="直播",福建海峡卫视
+#EXTVLCOPT:http-referrer=
+http://38.64.72.148:80/hls/modn/list/4009/chunklist0.m3u8
+#EXTINF:-1 group-title="直播",福建海峡卫视·线路2
+#EXTVLCOPT:http-referrer=
+http://38.64.72.148/hls/modn/list/4009/playlist.m3u8
+#EXTINF:-1 group-title="直播",福建海峡卫视·线路3
+#EXTVLCOPT:http-referrer=
+http://38.64.72.148:80/hls/modn/list/4009/playlist.m3u8
+#EXTINF:-1 group-title="直播",西藏卫视
+#EXTVLCOPT:http-referrer=
+http://112.27.5.218:9901/tsfile/live/0111_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="直播",西藏卫视·线路2
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/xzws.m3u8
+#EXTINF:-1 group-title="直播",西藏卫视·线路3
+#EXTVLCOPT:http-referrer=
+http://120.76.248.139/live/bfgd/4200000121.m3u8
+#EXTINF:-1 group-title="直播",贵州卫视
+#EXTVLCOPT:http-referrer=
+http://204.12.221.218:8181/3m1080p/gzws.m3u8
+#EXTINF:-1 group-title="直播",贵州卫视·线路2
+#EXTVLCOPT:http-referrer=
+http://38.75.136.137:98/gslb/dsdqpub/gzwshd.m3u8?auth=testpub
+#EXTINF:-1 group-title="直播",贵州卫视·线路3
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/gzwshd.m3u8
+#EXTINF:-1 group-title="直播",辽宁卫视
+#EXTVLCOPT:http-referrer=
+http://61.136.172.236:9901/tsfile/live/0121_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="直播",辽宁卫视·线路2
+#EXTVLCOPT:http-referrer=
+http://38.75.136.137:98/gslb/dsdqpub/lnwshd.m3u8?auth=testpub
+#EXTINF:-1 group-title="直播",辽宁卫视·线路3
+#EXTVLCOPT:http-referrer=
+http://198.204.228.26/live/lnwshd.m3u8
+#EXTINF:-1 group-title="直播",重庆卫视
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/cqwshd.m3u8
+#EXTINF:-1 group-title="直播",重庆卫视·线路2
+#EXTVLCOPT:http-referrer=
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cqwshd
+#EXTINF:-1 group-title="直播",陕西农林卫视
+#EXTVLCOPT:http-referrer=
+https://live.chinacert.cftest5.cn/cnmg/live/956904896
+#EXTINF:-1 group-title="直播",陕西卫视
+#EXTVLCOPT:http-referrer=
+http://192.151.150.154/live/snwshd.m3u8
+#EXTINF:-1 group-title="直播",陕西卫视·线路2
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/snwshd.m3u8
+#EXTINF:-1 group-title="直播",陕西卫视·线路3
+#EXTVLCOPT:http-referrer=
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=snwshd
+#EXTINF:-1 group-title="直播",青海卫视
+#EXTVLCOPT:http-referrer=
+https://hls-qhmh.lanzhousobey.cn/qhmh/mhds.m3u8
+#EXTINF:-1 group-title="直播",青海卫视·线路2
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/qhws.m3u8
+#EXTINF:-1 group-title="直播",青海卫视·线路3
+#EXTVLCOPT:http-referrer=
+http://120.76.248.139/live/bfgd/4200000111.m3u8
+#EXTINF:-1 group-title="直播",黑龙江卫视
+#EXTVLCOPT:http-referrer=
+http://120.76.248.139/live/bfgd/4200000095.m3u8
+#EXTINF:-1 group-title="直播",黑龙江卫视·线路2
+#EXTVLCOPT:http-referrer=
+https://idclive.hljtv.com:4430/live/hljws_own.m3u8
+#EXTINF:-1 group-title="直播",黑龙江卫视·线路3
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/hljwshd.m3u8
+#EXTINF:-1 group-title="直播",ITVB大后宫
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/huya/23863804
+#EXTINF:-1 group-title="直播",TVBABY
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/huya/23865164
+#EXTINF:-1 group-title="直播",TVBSASIA
+#EXTVLCOPT:http-referrer=
+http://38.64.72.148/hls/modn/list/4005/playlist.m3u8
+#EXTINF:-1 group-title="直播",TVBS亚洲
+#EXTVLCOPT:http-referrer=
+http://38.64.72.148/hls/modn/list/4005/chunklist0.m3u8
+#EXTINF:-1 group-title="直播",TVBS亚洲·线路2
+#EXTVLCOPT:http-referrer=
+http://38.64.72.148:80/hls/modn/list/4005/playlist.m3u8
+#EXTINF:-1 group-title="直播",TVB悬疑大片
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/huya/23865072
+#EXTINF:-1 group-title="直播",TVB练习生
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/huya/23865132
+#EXTINF:-1 group-title="直播",TVB追剧小能手
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/huya/23865179
+#EXTINF:-1 group-title="直播",凤凰中文
+#EXTVLCOPT:http-referrer=
+https://7612-5516-affc-d88b.kylintv.tv/live/pxinhd_iphone.m3u8
+#EXTINF:-1 group-title="直播",凤凰资讯
+#EXTVLCOPT:http-referrer=
+http://43.152.224.209/qctv.fengshows.cn/live/0701pin72.flv
+#EXTINF:-1 group-title="直播",凤凰资讯·线路2
+#EXTVLCOPT:http-referrer=
+http://r.jdshipin.com/0Rp07
+#EXTINF:-1 group-title="直播",凤凰资讯·线路3
+#EXTVLCOPT:http-referrer=
+http://php.jdshipin.com/TVOD/iptv.php?id=fhzx
+#EXTINF:-1 group-title="直播",凤凰香港
+#EXTVLCOPT:http-referrer=
+https://epg.pw/stream/5f16dc7fc8aaaed3205516c63e4a8c24bca9dbba1181684244729cf574505b0e.m3u8
+#EXTINF:-1 group-title="直播",凤凰香港·线路2
+#EXTVLCOPT:http-referrer=
+http://r.jdshipin.com/NfC0f
+#EXTINF:-1 group-title="直播",凤凰香港·线路3
+#EXTVLCOPT:http-referrer=
+http://php.jdshipin.com/TVOD/iptv.php?id=fhhk
+#EXTINF:-1 group-title="直播",福建漳州醉美沙滩翡翠湾
+#EXTVLCOPT:http-referrer=
+https://gcalic.v.myalicdn.com/gc/fcw03_1/index.m3u8
+#EXTINF:-1 group-title="直播",翡翠台
+#EXTVLCOPT:http-referrer=
+http://r.jdshipin.com/qClQf
+#EXTINF:-1 group-title="直播",翡翠台·线路2
+#EXTVLCOPT:http-referrer=
+http://r.jdshipin.com/qrfbg
+#EXTINF:-1 group-title="直播",翡翠台·线路3
+#EXTVLCOPT:http-referrer=
+http://r.jdshipin.com/GeWKr
+#EXTINF:-1 group-title="直播",香港刑侦实录
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/huya/23865058
+#EXTINF:-1 group-title="直播",28岁电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/8884164
+#EXTINF:-1 group-title="直播",3说电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9643264
+#EXTINF:-1 group-title="直播",77说电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9444320
+#EXTINF:-1 group-title="直播",CGTN
+#EXTVLCOPT:http-referrer=
+https://english-livebkali.cgtn.com/live/encgtn.m3u8
+#EXTINF:-1 group-title="直播",CGTN·线路2
+#EXTVLCOPT:http-referrer=
+https://0472.org/hls/cgtn.m3u8
+#EXTINF:-1 group-title="直播",CGTN·线路3
+#EXTVLCOPT:http-referrer=
+https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8
+#EXTINF:-1 group-title="直播",CGTNDOCUMENTARY
+#EXTVLCOPT:http-referrer=
+https://hlspackager.akamaized.net/live/DB/CGTN_DOCUMENTARY/HLS/CGTN_DOCUMENTARY.m3u8
+#EXTINF:-1 group-title="直播",CGTNDOCUMENTARY·线路2
+#EXTVLCOPT:http-referrer=
+https://amg00405-rakutentv-cgtndocumentary-rakuten-0ql8j.amagi.tv/master.m3u8
+#EXTINF:-1 group-title="直播",CGTNFRENCH
+#EXTVLCOPT:http-referrer=
+http://145.239.5.177/214/index.m3u8
+#EXTINF:-1 group-title="直播",CGTNGLOBALBIZ
+#EXTVLCOPT:http-referrer=
+https://fastlive.cctvplus.com/out/v1/2b3d8a0c805d437f9dc85b764c2ac599/index.m3u8
+#EXTINF:-1 group-title="直播",CGTNSPANISH
+#EXTVLCOPT:http-referrer=
+http://45.186.106.147:8880/play/a06f/index.m3u8
+#EXTINF:-1 group-title="直播",CGTN法语
+#EXTVLCOPT:http-referrer=
+http://espanol-liveali.cgtn.com/hls/LSveOGBaBw41Ea7ukkVAUdKQ220802LSTexu6xAuFH8VZNBLE1ZNEa220802cd.m3u8
+#EXTINF:-1 group-title="直播",CGTN纪录
+#EXTVLCOPT:http-referrer=
+https://english-livetx.cgtn.com/hls/yypdjlctzb_hd.m3u8
+#EXTINF:-1 group-title="直播",CGTN西语
+#EXTVLCOPT:http-referrer=
+https://0472.org/hls/cgtnx.m3u8
+#EXTINF:-1 group-title="直播",CGTN阿语
+#EXTVLCOPT:http-referrer=
+https://0472.org/hls/cgtna.m3u8
+#EXTINF:-1 group-title="直播",CHC动作电影
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/chcdz.m3u8
+#EXTINF:-1 group-title="直播",CHC动作电影·线路2
+#EXTVLCOPT:http-referrer=
+http://38.75.136.137:98/gslb/dsdqpub/chcdz.m3u8?auth=testpub
+#EXTINF:-1 group-title="直播",CHC动作电影·线路3
+#EXTVLCOPT:http-referrer=
+http://198.204.228.26/live/chcdz.m3u8
+#EXTINF:-1 group-title="直播",CHC电影
+#EXTVLCOPT:http-referrer=
+http://183.237.95.108:9901/tsfile/live/1008_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 group-title="直播",GOODTVCH45卡通
+#EXTVLCOPT:http-referrer=
+https://live.streamingfast.net/osmflivech45.m3u8
+#EXTINF:-1 group-title="直播",NEWTV动作电影
+#EXTVLCOPT:http-referrer=
+https://iptv.catvod.com/live.php?id=NewTV%E5%8A%A8%E4%BD%9C%E7%94%B5%E5%BD%B1
+#EXTINF:-1 group-title="直播",七台河新闻综合
+#EXTVLCOPT:http-referrer=
+http://live.qthnews.org.cn:1935/live/live1/800k/tzwj_video.m3u8
+#EXTINF:-1 group-title="直播",三七电影V
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9457792
+#EXTINF:-1 group-title="直播",三明新闻综合
+#EXTVLCOPT:http-referrer=
+http://ls.qingting.fm/live/4885.m3u8
+#EXTINF:-1 group-title="直播",三立新闻
+#EXTVLCOPT:http-referrer=
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV32.m3u8
+#EXTINF:-1 group-title="直播",上海第一财经
+#EXTVLCOPT:http-referrer=
+https://satellitepull.cnr.cn/live/wx32dycjgb/playlist.m3u8
+#EXTINF:-1 group-title="直播",上虞1新闻综合
+#EXTVLCOPT:http-referrer=
+https://l.cztvcloud.com/channels/lantian/SXshangyu1/720p.m3u8
+#EXTINF:-1 group-title="直播",上虞新闻综合
+#EXTVLCOPT:http-referrer=
+http://l.cztvcloud.com/channels/lantian/SXshangyu1/720p.m3u8?zzhed
+#EXTINF:-1 group-title="直播",世界纪录大全
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9406359
+#EXTINF:-1 group-title="直播",东方先生I
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/huya/24396323
+#EXTINF:-1 group-title="直播",东方福尔摩斯
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/huya/30080229
+#EXTINF:-1 group-title="直播",东莞新闻综合
+#EXTVLCOPT:http-referrer=
+https://stream.sun0769.com/dgrtv1/mp4tv1_800/index.m3u8
+#EXTINF:-1 group-title="直播",中国蓝新闻
+#EXTVLCOPT:http-referrer=
+http://ali-m-l.cztv.com/channels/lantian/channel009/1080p.m3u8
+#EXTINF:-1 group-title="直播",丽姐说电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9437283
+#EXTINF:-1 group-title="直播",之江纪录
+#EXTVLCOPT:http-referrer=
+http://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8
+#EXTINF:-1 group-title="直播",之江纪录·线路2
+#EXTVLCOPT:http-referrer=
+https://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8
+#EXTINF:-1 group-title="直播",之江纪录·线路3
+#EXTVLCOPT:http-referrer=
+https://ali-m-l.cztv.com/channels/lantian/channel12/720p.m3u8
+#EXTINF:-1 group-title="直播",九叔说电影V
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9348282
+#EXTINF:-1 group-title="直播",二哈讲电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/8778280
+#EXTINF:-1 group-title="直播",云南丽江冰川
+#EXTVLCOPT:http-referrer=
+https://gcalic.v.myalicdn.com/gc/hkylxs05_1/index.m3u8
+#EXTINF:-1 group-title="直播",云南丽江印象实景
+#EXTVLCOPT:http-referrer=
+https://gcalic.v.myalicdn.com/gc/hkylxs01_1/index.m3u8
+#EXTINF:-1 group-title="直播",云南丽江玉龙雪山
+#EXTVLCOPT:http-referrer=
+https://gcalic.v.myalicdn.com/gc/ylxs11_1/index.m3u8
+#EXTINF:-1 group-title="直播",云南丽江玉龙雪山草甸
+#EXTVLCOPT:http-referrer=
+https://gcalic.v.myalicdn.com/gc/hkylxs06_1/index.m3u8
+#EXTINF:-1 group-title="直播",云南丽江蓝月谷
+#EXTVLCOPT:http-referrer=
+https://gcalic.v.myalicdn.com/gc/ylxs12_1/index.m3u8
+#EXTINF:-1 group-title="直播",云南大理崇圣寺三塔中景
+#EXTVLCOPT:http-referrer=
+https://gcalic.v.myalicdn.com/gc/dlst03_1/index.m3u8
+#EXTINF:-1 group-title="直播",云南大理崇圣寺三塔远景
+#EXTVLCOPT:http-referrer=
+https://gcalic.v.myalicdn.com/gc/dlst01_1/index.m3u8
+#EXTINF:-1 group-title="直播",云南娱乐
+#EXTVLCOPT:http-referrer=
+https://hwapi.yntv.net/62hdvf/q9vs1b.m3u8
+#EXTINF:-1 group-title="直播",云南白沙远眺玉龙雪山
+#EXTVLCOPT:http-referrer=
+https://gcalic.v.myalicdn.com/gc/hkylxs03_1/index.m3u8
+#EXTINF:-1 group-title="直播",云南都市
+#EXTVLCOPT:http-referrer=
+https://hwapi.yntv.net/62hdvf/rjwt14.m3u8
+#EXTINF:-1 group-title="直播",云和新闻综合
+#EXTVLCOPT:http-referrer=
+http://l.cztvcloud.com/channels/lantian/SXyunhe1/720p.m3u8?zzhed
+#EXTINF:-1 group-title="直播",云和新闻综合·线路2
+#EXTVLCOPT:http-referrer=
+http://l.cztvcloud.com/channels/lantian/SXyunhe1/720p.m3u8
+#EXTINF:-1 group-title="直播",五分钟电影汇
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/8443438
+#EXTINF:-1 group-title="直播",亚运体育7号台
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/huya/136154
+#EXTINF:-1 group-title="直播",享看电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/8974130
+#EXTINF:-1 group-title="直播",亮哥讲电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/huya/16144175
+#EXTINF:-1 group-title="直播",亮哥讲电影2
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/huya/21059622
+#EXTINF:-1 group-title="直播",亮哥讲电影2·线路2
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/huya/29982687
+#EXTINF:-1 group-title="直播",亳州新闻
+#EXTVLCOPT:http-referrer=
+http://zbbf2.ahbztv.com/live/416.m3u8?zanhd
+#EXTINF:-1 group-title="直播",伦帝电影说
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9368091
+#EXTINF:-1 group-title="直播",伯乐说电影V
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9386057
+#EXTINF:-1 group-title="直播",余姚新闻综合
+#EXTVLCOPT:http-referrer=
+http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8?cWlkPSZzPTg3OWMwYmMyZDMzYTFhZGY3NDQxMjgyYTg1MmUzNTY0JmVzPTE3MDY2Nzc4NzMmdXVpZD0yMjdiY2MzNGNiNGY0MThlYjRiY2IxYzcwNmZjODNkMS02NzQ3NDY2NyZ2PTImYXM9MCZjZG5leF9pZD10eF9waG9uZV9saXZl
+#EXTINF:-1 group-title="直播",余姚新闻综合·线路2
+#EXTVLCOPT:http-referrer=
+https://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8
+#EXTINF:-1 group-title="直播",余姚新闻综合·线路3
+#EXTVLCOPT:http-referrer=
+http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8
+#EXTINF:-1 group-title="直播",俗哥看电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/2161818
+#EXTINF:-1 group-title="直播",六安新闻综合
+#EXTVLCOPT:http-referrer=
+http://ls.qingting.fm/live/267.m3u8
+#EXTINF:-1 group-title="直播",兰溪新闻综合
+#EXTVLCOPT:http-referrer=
+http://l.cztvcloud.com/channels/lantian/SXlanxi1/720p.m3u8
+#EXTINF:-1 group-title="直播",兵团五师双河影
+#EXTVLCOPT:http-referrer=
+https://liveout.btzx.com.cn/62ds9e/6o77s4.m3u8?zxinjd
+#EXTINF:-1 group-title="直播",兵团五师双河新闻综合
+#EXTVLCOPT:http-referrer=
+http://liveout.btzx.com.cn/62ds9e/4nxdih.m3u8?fbl=
+#EXTINF:-1 group-title="直播",兵团八师石河子新闻综合
+#EXTVLCOPT:http-referrer=
+http://124.88.144.73:1935/live/xwzh/playlist.m3u8?zxinjd
+#EXTINF:-1 group-title="直播",冒险电影放映厅
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/huya/21059566
+#EXTINF:-1 group-title="直播",农安新闻综合
+#EXTVLCOPT:http-referrer=
+https://stream2.jlntv.cn/naxw/sd/live.m3u8
+#EXTINF:-1 group-title="直播",刘哔电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/2632223
+#EXTINF:-1 group-title="直播",刘德华电影
+#EXTVLCOPT:http-referrer=
+https://live.metshop.top/huya/11342424
+#EXTINF:-1 group-title="直播",刘老师说电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/8317926
+#EXTINF:-1 group-title="直播",前任电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9329242
+#EXTINF:-1 group-title="直播",功夫电影
+#EXTVLCOPT:http-referrer=
+https://live.metshop.top/huya/11352941
+#EXTINF:-1 group-title="直播",动画电影放映厅
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/huya/11352878
+#EXTINF:-1 group-title="直播",北京大妈有话说ER
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9440530
+#EXTINF:-1 group-title="直播",北京影帝
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/214827
+#EXTINF:-1 group-title="直播",北京影帝的分身
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9805480
+#EXTINF:-1 group-title="直播",北京新闻
+#EXTVLCOPT:http-referrer=
+https://satellitepull.cnr.cn/live/wxbjxwgb/playlist.m3u8
+#EXTINF:-1 group-title="直播",北京科教
+#EXTVLCOPT:http-referrer=
+http://120.76.248.139/live/bfgd/4200000113.m3u8
+#EXTINF:-1 group-title="直播",南京少儿
+#EXTVLCOPT:http-referrer=
+http://nklive.nbs.cn/hls/e0981f3f-1a20-4a59-b8d1-17feb83a4610/index.m3u8
+#EXTINF:-1 group-title="直播",南京新闻综合
+#EXTVLCOPT:http-referrer=
+http://nklive.nbs.cn/hls/d511bc9d-a694-4453-b3a2-4fc842cc97a1/index.m3u8
+#EXTINF:-1 group-title="直播",博然讲电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9561992
+#EXTINF:-1 group-title="直播",厦门鼓浪屿
+#EXTVLCOPT:http-referrer=
+https://gcalic.v.myalicdn.com/gc/gly01_1/index.m3u8
+#EXTINF:-1 group-title="直播",发条张的电影最TOP
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/2164691
+#EXTINF:-1 group-title="直播",古天乐电影
+#EXTVLCOPT:http-referrer=
+https://live.metshop.top/huya/29982675
+#EXTINF:-1 group-title="直播",吉林乡村
+#EXTVLCOPT:http-referrer=
+https://satellitepull.cnr.cn/live/wxjlxcgb/playlist.m3u8
+#EXTINF:-1 group-title="直播",吉林市新闻综合
+#EXTVLCOPT:http-referrer=
+https://stream2.jlntv.cn/jilin1/sd/live.m3u8
+#EXTINF:-1 group-title="直播",同同电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/10155359
+#EXTINF:-1 group-title="直播",吾聊电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/huya/16424416
+#EXTINF:-1 group-title="直播",吾聊电影2
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/huya/29982684
+#EXTINF:-1 group-title="直播",周墨看电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9505584
+#EXTINF:-1 group-title="直播",周星驰电影
+#EXTVLCOPT:http-referrer=
+https://live.metshop.top/huya/11342412
+#EXTINF:-1 group-title="直播",哈尔滨新闻综合
+#EXTVLCOPT:http-referrer=
+http://stream.hrbtv.net/xwzh/sd/live.m3u8?zheild
+#EXTINF:-1 group-title="直播",唐司令说电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/8774345
+#EXTINF:-1 group-title="直播",喜人电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/10348735
+#EXTINF:-1 group-title="直播",喜剧电影放映厅
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/huya/11602031
+#EXTINF:-1 group-title="直播",喜剧电影笑不停
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/10298856
+#EXTINF:-1 group-title="直播",喵妹说电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9312432
+#EXTINF:-1 group-title="直播",嘉兴新闻综合
+#EXTVLCOPT:http-referrer=
+http://live.zohi.tv/video/s10001-fztv-1/index.m3u8
+#EXTINF:-1 group-title="直播",四川四姑娘山隆珠措
+#EXTVLCOPT:http-referrer=
+https://gcalic.v.myalicdn.com/gc/sgns02_1/index.m3u8
+#EXTINF:-1 group-title="直播",四川峨眉山云海日出
+#EXTVLCOPT:http-referrer=
+https://gcalic.v.myalicdn.com/gc/emsarm_1/index.m3u8
+#EXTINF:-1 group-title="直播",四川峨眉山普贤菩萨铜像
+#EXTVLCOPT:http-referrer=
+https://gcalic.v.myalicdn.com/gc/emspxps_1/index.m3u8
+#EXTINF:-1 group-title="直播",四川峨眉山远眺万佛顶
+#EXTVLCOPT:http-referrer=
+https://gcalic.v.myalicdn.com/gc/emswfs_1/index.m3u8
+#EXTINF:-1 group-title="直播",四川峨眉山远眺贡嘎雪山
+#EXTVLCOPT:http-referrer=
+https://gcalic.v.myalicdn.com/gc/emsyh_1/index.m3u8
+#EXTINF:-1 group-title="直播",四川科教
+#EXTVLCOPT:http-referrer=
+http://182.150.115.21:8030/pcgacg/pcgacg_0.m3u8
+#EXTINF:-1 group-title="直播",四平新闻综合
+#EXTVLCOPT:http-referrer=
+https://stream2.jlntv.cn/sptv/sd/live.m3u8
+#EXTINF:-1 group-title="直播",固镇新闻
+#EXTVLCOPT:http-referrer=
+http://www.guzhenm.com:7001/hls/hd-live.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]
+#EXTINF:-1 group-title="直播",固镇新闻·线路2
+#EXTVLCOPT:http-referrer=
+http://www.guzhenm.com:7001/hls/hd-live.m3u8
+#EXTINF:-1 group-title="直播",大墨电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/huya/29458834
+#EXTINF:-1 group-title="直播",大壮撞电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9437349
+#EXTINF:-1 group-title="直播",大荒电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/3508538
+#EXTINF:-1 group-title="直播",大趴电影院
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/8747638
+#EXTINF:-1 group-title="直播",天堂电影1895
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9573592
+#EXTINF:-1 group-title="直播",天津体育
+#EXTVLCOPT:http-referrer=
+http://38.75.136.137:98/gslb/dsdqpub/tjtv5.m3u8?auth=testpub
+#EXTINF:-1 group-title="直播",天津体育·线路2
+#EXTVLCOPT:http-referrer=
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=tjtv5
+#EXTINF:-1 group-title="直播",太谷新闻综合
+#EXTVLCOPT:http-referrer=
+https://p2.vzan.com/slowlive/596867413819827251/live.m3u8?zbid=1725814272&amp;amp;tpid=1516989100&amp;amp;type=0
+#EXTINF:-1 group-title="直播",太谷新闻综合·线路2
+#EXTVLCOPT:http-referrer=
+https://p2.vzan.com/slowlive/596867413819827251/live.m3u8?zbid=1725814272&tpid=1516989100&type=0
+#EXTINF:-1 group-title="直播",夹江新闻综合
+#EXTVLCOPT:http-referrer=
+http://tvfile.jjrm.org.cn/nmip-media/channellive/channel106282/playlist.m3u8?zsicd
+#EXTINF:-1 group-title="直播",奇幻电影放映厅
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/huya/26355847
+#EXTINF:-1 group-title="直播",奇怪电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9440966
+#EXTINF:-1 group-title="直播",女汉子说电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9395966
+#EXTINF:-1 group-title="直播",女神撩电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9439594
+#EXTINF:-1 group-title="直播",宇哥讲电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/2104744
+#EXTINF:-1 group-title="直播",安小闫说电影X
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/1842621
+#EXTINF:-1 group-title="直播",安徽国际
+#EXTVLCOPT:http-referrer=
+https://m.italkbbtv.com/live/6a3a3784260d0d240f66a62c
+#EXTINF:-1 group-title="直播",安徽导视
+#EXTVLCOPT:http-referrer=
+http://dspdhls.appcoo.com:8888/live/dspd/index.m3u8
+#EXTINF:-1 group-title="直播",安徽影视
+#EXTVLCOPT:http-referrer=
+https://www.ahtv.cn/folder9000/folder20193?channelIndex=3
+#EXTINF:-1 group-title="直播",安徽池州九华山风景区九华山
+#EXTVLCOPT:http-referrer=
+https://gcalic.v.myalicdn.com/gc/jhs05_1/index.m3u8
+#EXTINF:-1 group-title="直播",安徽黟县芦村远眺
+#EXTVLCOPT:http-referrer=
+https://gcalic.v.myalicdn.com/gc/yxlcyt_1/index.m3u8
+#EXTINF:-1 group-title="直播",安徽黟县西递牌坊
+#EXTVLCOPT:http-referrer=
+https://gcalic.v.myalicdn.com/gc/yxxdpf_1/index.m3u8
+#EXTINF:-1 group-title="直播",安顺新闻
+#EXTVLCOPT:http-referrer=
+https://hplayer1.juyun.tv/camera/154379194.m3u8
+#EXTINF:-1 group-title="直播",宜兴新闻
+#EXTVLCOPT:http-referrer=
+https://live.chinacert.cftest5.cn/cnmg/live/955227996
+#EXTINF:-1 group-title="直播",宿州新闻综合
+#EXTVLCOPT:http-referrer=
+http://live.ahsz.tv/video/s10001-szzh/index.m3u8
+#EXTINF:-1 group-title="直播",小丑讲电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/huya/16857432
+#EXTINF:-1 group-title="直播",小丽说电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9368016
+#EXTINF:-1 group-title="直播",小乔讲电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/8413908
+#EXTINF:-1 group-title="直播",小儛电影嘚啵嘚
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/8362978
+#EXTINF:-1 group-title="直播",小岛讲电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9390955
+#EXTINF:-1 group-title="直播",小川侃电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/huya/15870999
+#EXTINF:-1 group-title="直播",小浅说电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9665834
+#EXTINF:-1 group-title="直播",小涛讲电影V
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/8415464
+#EXTINF:-1 group-title="直播",小超讲电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/3432645
+#EXTINF:-1 group-title="直播",小马哥说电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9396672
+#EXTINF:-1 group-title="直播",少年看电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/8762120
+#EXTINF:-1 group-title="直播",山东教育
+#EXTVLCOPT:http-referrer=
+https://test1.live.sdetv.com.cn/live/dianshizhibo/playlist.m3u8
+#EXTINF:-1 group-title="直播",山东新闻
+#EXTVLCOPT:http-referrer=
+http://ls.qingting.fm/live/60180.m3u8
+#EXTINF:-1 group-title="直播",山东生活
+#EXTVLCOPT:http-referrer=
+http://ls.qingting.fm/live/60260.m3u8
+#EXTINF:-1 group-title="直播",屿风体育
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/10329889
+#EXTINF:-1 group-title="直播",崽崽撩电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/8325511
+#EXTINF:-1 group-title="直播",嵊州新闻综合
+#EXTVLCOPT:http-referrer=
+http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8?zzhed
+#EXTINF:-1 group-title="直播",嵊州新闻综合·线路2
+#EXTVLCOPT:http-referrer=
+http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8?zzhed#http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8
+#EXTINF:-1 group-title="直播",幕撩电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9486015
+#EXTINF:-1 group-title="直播",平湖新闻综合
+#EXTVLCOPT:http-referrer=
+http://l.cztvcloud.com/channels/lantian/SXpinghu1/720p.m3u8?zzhed
+#EXTINF:-1 group-title="直播",广东Ⅰ韶关公共台
+#EXTVLCOPT:http-referrer=
+https://www.sgmsw.cn/videos/tv/201805/1308/9P424TC5M000AFO13CXK6GN6BOA889D2/hls/live.m3u8
+#EXTINF:-1 group-title="直播",广东Ⅰ韶关综合台
+#EXTVLCOPT:http-referrer=
+https://www.sgmsw.cn/videos/tv/201805/1308/SB05RIYZOU8JR418AUQOF62CAJQ08D0E/hls/live.m3u8
+#EXTINF:-1 group-title="直播",广东体育
+#EXTVLCOPT:http-referrer=
+https://epg.pw/stream/7b470f9fc5c305db0c8622117b7b25ca00eb35ba3e93e865cf0ff9df5c736681.m3u8
+#EXTINF:-1 group-title="直播",广东体育·线路2
+#EXTVLCOPT:http-referrer=
+http://38.75.136.137:98/gslb/dsdqpub/gdty.m3u8?auth=testpub
+#EXTINF:-1 group-title="直播",广东体育·线路3
+#EXTVLCOPT:http-referrer=
+http://php.jdshipin.com/TVOD/iptv.php?id=gdty
+#EXTINF:-1 group-title="直播",广东新闻
+#EXTVLCOPT:http-referrer=
+http://38.75.136.137:98/gslb/dsdqpub/gdxw.m3u8?auth=testpub
+#EXTINF:-1 group-title="直播",广东民生
+#EXTVLCOPT:http-referrer=
+http://183.11.239.36:808/hls/18/index.m3u8
+#EXTINF:-1 group-title="直播",广东民生·线路2
+#EXTVLCOPT:http-referrer=
+http://38.75.136.137:98/gslb/dsdqpub/gdgg.m3u8?auth=testpub
+#EXTINF:-1 group-title="直播",广东珠江
+#EXTVLCOPT:http-referrer=
+http://38.75.136.137:98/gslb/dsdqpub/gdzja.m3u8?auth=testpub
+#EXTINF:-1 group-title="直播",广东珠江·线路2
+#EXTVLCOPT:http-referrer=
+http://38.75.136.137:98/gslb/dsdqpub/gdzj.m3u8?auth=testpub
+#EXTINF:-1 group-title="直播",广东珠江·线路3
+#EXTVLCOPT:http-referrer=
+http://cdn2.163189.xyz/live/gdzj/stream.m3u8
+#EXTINF:-1 group-title="直播",广州新闻
+#EXTVLCOPT:http-referrer=
+http://tencentplay.gztv.com/live/xinwen.m3u8?txSecret=d2c2db0b598c02ec1b5623728434d367&txTime=18d57929bd3
+#EXTINF:-1 group-title="直播",广西国际
+#EXTVLCOPT:http-referrer=
+https://hlscdn.liangtv.cn/live/0234c48e0bc24fe1b41b9999a253e581/1075ee38e04f490690f6a36a16e09c79.m3u8
+#EXTINF:-1 group-title="直播",广西国际·线路2
+#EXTVLCOPT:http-referrer=
+http://192.151.150.154/live/gxgj.m3u8
+#EXTINF:-1 group-title="直播",广西国际·线路3
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/gxgj.m3u8
+#EXTINF:-1 group-title="直播",广西新闻
+#EXTVLCOPT:http-referrer=
+http://192.151.150.154/live/gxxw.m3u8
+#EXTINF:-1 group-title="直播",广西新闻·线路2
+#EXTVLCOPT:http-referrer=
+http://107.150.60.122/live/gxxw.m3u8
+#EXTINF:-1 group-title="直播",广西新闻·线路3
+#EXTVLCOPT:http-referrer=
+http://38.75.136.137:98/gslb/dsdqpub/gxxw.m3u8?auth=testpub
+#EXTINF:-1 group-title="直播",广西桂林漓江景区
+#EXTVLCOPT:http-referrer=
+https://gcalic.v.myalicdn.com/gc/gllj01_1/index.m3u8
+#EXTINF:-1 group-title="直播",广西玉林大容山莲花山顶
+#EXTVLCOPT:http-referrer=
+https://gcalic.v.myalicdn.com/gc/drs01_1/index.m3u8
+#EXTINF:-1 group-title="直播",庆元新闻综合
+#EXTVLCOPT:http-referrer=
+http://l.cztvcloud.com/channels/lantian/SXqingyuan1/720p.m3u8?fbl=
+#EXTINF:-1 group-title="直播",延边2
+#EXTVLCOPT:http-referrer=
+http://stream5.jlntv.cn/wq/playlist.m3u8
+#EXTINF:-1 group-title="直播",延边新闻综合
+#EXTVLCOPT:http-referrer=
+https://stream2.jlntv.cn/jlyb/sd/live.m3u8
+#EXTINF:-1 group-title="直播",开化新闻综合
+#EXTVLCOPT:http-referrer=
+http://l.cztvcloud.com/channels/lantian/SXkaihua1/720p.m3u8?zzhed
+#EXTINF:-1 group-title="直播",张掖新闻综合
+#EXTVLCOPT:http-referrer=
+https://play.kankanlive.com/live/1720583434627241.m3u8
+#EXTINF:-1 group-title="直播",强森电影
+#EXTVLCOPT:http-referrer=
+https://live.metshop.top/huya/21059581
+#EXTINF:-1 group-title="直播",怪兽电影
+#EXTVLCOPT:http-referrer=
+https://live.metshop.top/huya/21059577
+#EXTINF:-1 group-title="直播",怪兽马提尼电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9075333
+#EXTINF:-1 group-title="直播",怪味爆米花电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9422144
+#EXTINF:-1 group-title="直播",恐怖电影「解说」
+#EXTVLCOPT:http-referrer=
+https://cdn.ttvb.eu.org/huya/23419131
+#EXTINF:-1 group-title="直播",悠悠爱电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/huya/30611864
+#EXTINF:-1 group-title="直播",悬疑电影放映厅
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/huya/29982641
+#EXTINF:-1 group-title="直播",惊悚电影放映厅
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/huya/26355795
+#EXTINF:-1 group-title="直播",成龙电影
+#EXTVLCOPT:http-referrer=
+https://live.metshop.top/huya/11342386
+#EXTINF:-1 group-title="直播",我是吃泡面看电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/8851063
+#EXTINF:-1 group-title="直播",战争电影
+#EXTVLCOPT:http-referrer=
+https://live.metshop.top/huya/21059574
+#EXTINF:-1 group-title="直播",战争电影放映厅
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/huya/21059618
+#EXTINF:-1 group-title="直播",扁豆看电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/huya/16028551
+#EXTINF:-1 group-title="直播",扁豆看电影2
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/huya/21059623
+#EXTINF:-1 group-title="直播",指缝里看电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9647834
+#EXTINF:-1 group-title="直播",撩电影8
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9351043
+#EXTINF:-1 group-title="直播",文成新闻综合
+#EXTVLCOPT:http-referrer=
+http://l.cztvcloud.com/channels/lantian/SXwencheng1/720p.m3u8
+#EXTINF:-1 group-title="直播",新昌新闻综合
+#EXTVLCOPT:http-referrer=
+https://l.cztvcloud.com/channels/lantian/SXxinchang1/720p.m3u8
+#EXTINF:-1 group-title="直播",新沂新闻
+#EXTVLCOPT:http-referrer=
+http://live.xysrmt.cn/xwzh/sd/live.m3u8?zjiangsd"
+#EXTINF:-1 group-title="直播",新闻综合
+#EXTVLCOPT:http-referrer=
+https://m3u8channel.yunxya.com/nmip-media/channellive/channel100028/playlist.m3u8
+#EXTINF:-1 group-title="直播",无线新闻
+#EXTVLCOPT:http-referrer=
+https://h5cdn3.kylintv.tv/live/tvbnews_iphone.m3u8
+#EXTINF:-1 group-title="直播",无线新闻·线路2
+#EXTVLCOPT:http-referrer=
+http://r.jdshipin.com/CkuBd
+#EXTINF:-1 group-title="直播",无线新闻·线路3
+#EXTVLCOPT:http-referrer=
+http://php.jdshipin.com/TVOD/iptv.php?id=wxxw
+#EXTINF:-1 group-title="直播",无线星河
+#EXTVLCOPT:http-referrer=
+http://r.jdshipin.com/Voac4
+#EXTINF:-1 group-title="直播",无线星河·线路2
+#EXTVLCOPT:http-referrer=
+http://r.jdshipin.com/sXuuD
+#EXTINF:-1 group-title="直播",无线星河·线路3
+#EXTVLCOPT:http-referrer=
+http://php.jdshipin.com/TVOD/iptv.php?id=xinghe
+#EXTINF:-1 group-title="直播",无际电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9720498
+#EXTINF:-1 group-title="直播",旺苍新闻综合
+#EXTVLCOPT:http-referrer=
+http://live.spccmc.com:90/live/spxwzh.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]
+#EXTINF:-1 group-title="直播",旺苍新闻综合·线路2
+#EXTVLCOPT:http-referrer=
+http://channel.wcrmt.cn:80/nmip-media/channellive/channel105268/playlist.m3u8
+#EXTINF:-1 group-title="直播",星君说电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/8014467
+#EXTINF:-1 group-title="直播",晓晓说电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9430717
+#EXTINF:-1 group-title="直播",晓麦讲电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/453963
+#EXTINF:-1 group-title="直播",普陀新闻综合
+#EXTVLCOPT:http-referrer=
+http://l.cztvcloud.com/channels/lantian/SXputuo1/720p.m3u8
+#EXTINF:-1 group-title="直播",有部电影儿
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9736479
+#EXTINF:-1 group-title="直播",朝阳新闻综合
+#EXTVLCOPT:http-referrer=
+http://120.76.248.139/live/bfgd/4200000282.m3u8
+#EXTINF:-1 group-title="直播",末日说电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9431125
+#EXTINF:-1 group-title="直播",李连杰电影
+#EXTVLCOPT:http-referrer=
+https://live.metshop.top/huya/11342390
+#EXTINF:-1 group-title="直播",松原新闻综合
+#EXTVLCOPT:http-referrer=
+https://stream2.jlntv.cn/sytv/sd/live.m3u8
+#EXTINF:-1 group-title="直播",松潘新闻综合
+#EXTVLCOPT:http-referrer=
+http://live.spccmc.com:90/live/spxwzh.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]
+#EXTINF:-1 group-title="直播",松潘新闻综合·线路2
+#EXTVLCOPT:http-referrer=
+http://live.spccmc.com:90/live/spxwzh.m3u8?zsicd
+#EXTINF:-1 group-title="直播",松潘新闻综合·线路3
+#EXTVLCOPT:http-referrer=
+http://live.spccmc.com:90/live/spxwzh.m3u8
+#EXTINF:-1 group-title="直播",松轩说电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/1524969
+#EXTINF:-1 group-title="直播",林正英电影
+#EXTVLCOPT:http-referrer=
+https://live.metshop.top/huya/11342421
+#EXTINF:-1 group-title="直播",枪战电影
+#EXTVLCOPT:http-referrer=
+https://live.metshop.top/huya/21059579
+#EXTINF:-1 group-title="直播",梓帆说电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9769563
+#EXTINF:-1 group-title="直播",楚哥说电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9375743
+#EXTINF:-1 group-title="直播",楚门聊电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/huya/16507906
+#EXTINF:-1 group-title="直播",止戈电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/huya/19863777
+#EXTINF:-1 group-title="直播",止戈电影「解说」
+#EXTVLCOPT:http-referrer=
+https://cdn.ttvb.eu.org/huya/19863777
+#EXTINF:-1 group-title="直播",正经纪录片
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/huya/23860049
+#EXTINF:-1 group-title="直播",武义新闻综合
+#EXTVLCOPT:http-referrer=
+http://l.cztvcloud.com/channels/lantian/SXwuyi1/720p.m3u8?zzhed
+#EXTINF:-1 group-title="直播",武义新闻综合·线路2
+#EXTVLCOPT:http-referrer=
+http://l.cztvcloud.com/channels/lantian/SXwuyi1/720p.m3u8
+#EXTINF:-1 group-title="直播",武乡新闻综合
+#EXTVLCOPT:http-referrer=
+http://uzoiczhh.live.sxmty.com/live/hls/0d41f1480c4042d49927858f01fde707/53130407737b417b9a6259b57246bae3.m3u8?zshanxd
+#EXTINF:-1 group-title="直播",武侠电影
+#EXTVLCOPT:http-referrer=
+https://live.metshop.top/huya/11342427
+#EXTINF:-1 group-title="直播",武侠电影放映厅
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/huya/29982611
+#EXTINF:-1 group-title="直播",武汉一台新闻综合
+#EXTVLCOPT:http-referrer=
+https://ls.qingting.fm/live/20198/64k.m3u8
+#EXTINF:-1 group-title="直播",武进新闻
+#EXTVLCOPT:http-referrer=
+https://live.wjyanghu.com/live/CH1.m3u8
+#EXTINF:-1 group-title="直播",每日好电影V
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9533302
+#EXTINF:-1 group-title="直播",永嘉新闻综合
+#EXTVLCOPT:http-referrer=
+http://l.cztvcloud.com/channels/lantian/SXyongjia1/720p.m3u8
+#EXTINF:-1 group-title="直播",江夏新闻综合
+#EXTVLCOPT:http-referrer=
+http://59.175.226.142:280/gb28181/xwzh.m3u8?zhubd
+#EXTINF:-1 group-title="直播",江津新闻
+#EXTVLCOPT:http-referrer=
+http://222.179.155.21:1935/ch1.m3u8?zzhongqd
+#EXTINF:-1 group-title="直播",江津新闻综合
+#EXTVLCOPT:http-referrer=
+http://222.179.155.21:1935/ch1.m3u8
+#EXTINF:-1 group-title="直播",江苏体育
+#EXTVLCOPT:http-referrer=
+https://live.chinacert.cftest5.cn/cnmg/live/626064707
+#EXTINF:-1 group-title="直播",江苏公共
+#EXTVLCOPT:http-referrer=
+https://live.chinacert.cftest5.cn/cnmg/live/626064693
+#EXTINF:-1 group-title="直播",江苏南京牛首山
+#EXTVLCOPT:http-referrer=
+https://gcalic.v.myalicdn.com/gc/nss01_1/index.m3u8
+#EXTINF:-1 group-title="直播",江苏徐州云龙湖风景区云龙山观景台西
+#EXTVLCOPT:http-referrer=
+https://gcalic.v.myalicdn.com/gc/ylh04_1/index.m3u8
+#EXTINF:-1 group-title="直播",汪哥说电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9312685
+#EXTINF:-1 group-title="直播",汶川新闻综合
+#EXTVLCOPT:http-referrer=
+http://live.iwcmt.cn:90/live/zhxw.m3u8?zsicd
+#EXTINF:-1 group-title="直播",汶川新闻综合·线路2
+#EXTVLCOPT:http-referrer=
+http://live.iwcmt.cn:90/live/zhxw.m3u8
+#EXTINF:-1 group-title="直播",汶川新闻综合·线路3
+#EXTVLCOPT:http-referrer=
+http://file.ysxtv.cn/cms/videos/nmip-media/channellive/channel4/playlist.m3u8?zsicd#rtmp://tv.mcrm.org.cn:1935/channellive/tv01
+#EXTINF:-1 group-title="直播",沈腾电影
+#EXTVLCOPT:http-referrer=
+https://live.metshop.top/huya/11601968
+#EXTINF:-1 group-title="直播",河北农民
+#EXTVLCOPT:http-referrer=
+https://ls.qingting.fm/live/1650/64k.m3u8
+#EXTINF:-1 group-title="直播",河北农民·线路2
+#EXTVLCOPT:http-referrer=
+http://ls.qingting.fm/live/1650.m3u8
+#EXTINF:-1 group-title="直播",河北农民·线路3
+#EXTVLCOPT:http-referrer=
+https://jwcdnqx.hebyun.com.cn/live/clzhpd/1500k/tzwj_video.m3u8?zhebd
+#EXTINF:-1 group-title="直播",河北都市
+#EXTVLCOPT:http-referrer=
+https://radio.pull.hebtv.com/live/hebnczx.m3u8
+#EXTINF:-1 group-title="直播",泗洪新闻综合
+#EXTVLCOPT:http-referrer=
+http://live1.habctv.com/ggpdsl/sd/live.m3u8?zjiangsd#http://live1.habctv.com/ggpdsl/sd/live.m3u8
+#EXTINF:-1 group-title="直播",泸县新闻综合
+#EXTVLCOPT:http-referrer=
+http://lxfile.lxxcb.cn/nmip-media/channellive/channel103799/playlist.m3u8?zsicd
+#EXTINF:-1 group-title="直播",泸县新闻综合·线路2
+#EXTVLCOPT:http-referrer=
+http://lxfile.lxxcb.cn:80/nmip-media/channellive/channel103799/playlist.m3u8
+#EXTINF:-1 group-title="直播",泸县新闻综合·线路3
+#EXTVLCOPT:http-referrer=
+http://lxfile.lxxcb.cn/nmip-media/channellive/channel103799/playlist.m3u8
+#EXTINF:-1 group-title="直播",洛克电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/douyu/9414884
+#EXTINF:-1 group-title="直播",浅浅爱电影
+#EXTVLCOPT:http-referrer=
+https://live.ottiptv.cc/huya/31274232
+#EXTINF:-1 group-title="直播",浙江Ⅰ绍兴影视
+#EXTVLCOPT:http-referrer=
+http://live.shaoxing.com.cn/video/s10001-sxtv3/index.m3u8
+#EXTINF:-1 group-title="直播",浙江Ⅰ绍兴综合
+#EXTVLCOPT:http-referrer=
+http://live.shaoxing.com.cn/video/s10001-sxtv1/index.m3u8
+#EXTINF:-1 group-title="直播",浙江休闲台
+#EXTVLCOPT:http-referrer=
+http://ali-m-l.cztv.com/channels/lantian/channel006/720p.m3u8
+#EXTINF:-1 group-title="直播",浙江公共新闻
+#EXTVLCOPT:http-referrer=
+http://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8
+#EXTINF:-1 group-title="直播",浙江公共新闻·线路2
+#EXTVLCOPT:http-referrer=
+http://ali-m-l.cztv.com/channels/lantian/channel07/1080p.m3u8
+#EXTINF:-1 group-title="直播",浙江公共新闻·线路3
+#EXTVLCOPT:http-referrer=
+https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8
