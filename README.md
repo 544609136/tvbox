@@ -6,33 +6,55 @@
 https://gh-proxy.org/https://raw.githubusercontent.com/544609136/tvbox/main/multi_cn.json
 ```
 
+> **主推第 ① 条**：合并仓 `cur/combo.json`（762 站，含 P2P / 磁力 / 网盘 / 盘搜 / 推送）。
+
 raw 直连版（不用镜像）：
 
 ```
 https://raw.githubusercontent.com/544609136/tvbox/main/multi.json
 ```
 
-## 入口里 4 条源的顺序（新版优先，拉不动自动往后面落）
+## 入口里 6 条源的顺序（新版优先，拉不动自动往后面落）
 
-| # | 源 | 站数 | 说明 |
+| # | 源 | 内容 | 说明 |
 |---|---|---|---|
-| ① | `cur/vod_slim.json` | 50 | **新版·精简**，已实测 + 内容去重，时延/吞吐最优 |
-| ② | `cur/vod_full.json` | 147 | **新版·完整**，全部实测可播源（含内容重复项） |
-| ③ | `backup/single.json` | 5646 | 旧版·降级备份（上一轮发布） |
-| ④ | `backup/single_full.json` | 6033 | 旧版·降级备份（含失效项） |
+| ① | `cur/combo.json` | **762 站** | **合并仓·推荐** ：点播 147 + 成人标记 34 + 特殊功能 615 |
+| ② | `cur/vod_slim.json` | 50 站 | 精简点播，已实测 + 内容去重 |
+| ③ | `cur/vod_full.json` | 147 站 | 全部实测可播点播源 |
+| ④ | `cur/live.json` | 10 清单 | 只要直播 |
+| ⑤ | `backup/single.json` | 5646 站 | 旧版·降级备份（上一轮发布） |
+| ⑥ | `backup/single_full.json` | 6033 站 | 旧版·降级备份（含失效项） |
 
 后两条只在前面都拉不动时才用到，仅作兜底。
+
+## 特殊功能站（合并仓里有什么）
+
+| 类别 | 数量 | 例子 |
+|---|---|---|
+| 磁力 / P2P | 135 | 荐片┃P2P、新6V┃磁力、美剧迷、迅雷吧 |
+| 4K / 弹幕 | 133 | 玩偶哥哥┃4K弹幕、4K指南 |
+| 网盘·搜索 | 68 | 盘搜、大盘搜、趣盘搜、夸克盘搜、TG搜索 |
+| 网盘·分享 | 47 | 夸克分享、阿里分享、115分享、UC分享、迅雷分享、PikPak |
+| 推送 / 投屏 | 28 | 手机┃推送、推送接收 |
+| AList | 14 | AList┃网盘、网盘市场 |
+
+**依赖**：`cur/spider_special.jar`（25.47 MB，自建 multi-dex，覆盖 241/273 内置类，
+即 **92% 的 type3 站可跑**）。它必须与 `combo.json` **同级** ——
+combo 的 `spider` 字段写的是相对路径 `spider_special.jar`。
 
 ## 目录
 
 ```
-multi_cn.json / multi.json    国内镜像入口 / raw 直连入口（各 4 条源）
+multi_cn.json / multi.json    国内镜像入口 / raw 直连入口（各 6 条源）
 cur/                          新版
-  vod_slim.json                 50 站（推荐）
-  vod_full.json                 147 站（全部可播源）
+  combo.json                    **合并仓·762 站**（推荐）
+  spider_special.jar            合并仓的 spider 依赖（25.47MB，必须同级）
+  vod_slim.json                 50 站（精简点播）
+  vod_full.json                 147 站（全部可播点播源）
   live.m3u                      直播源，301 频道 / 455 线路（VLC/PotPlayer 直接可用）
   live.json                     只含直播的 TVBox 配置
   整理报告.html                  实测报告（漏斗 / 去重说明 / 逐站延迟吞吐表）
+  成人源清单.md                  34 条成人标记明细 + 误伤实证
 backup/                       旧版降级备份
   single.json / single_full.json / jingxuan.json
   lib/ js/ json/                旧版配置的 ./ 相对路径依赖（不可移动）
@@ -41,9 +63,14 @@ backup/                       旧版降级备份
 ## 关于成人标记
 
 站点名称带 `**` 前缀（同时带 `adultFlag: true` 字段）的是**成人疑似源**。
-它们**全部保留、没有被删除**，标记只是提示，请自行判断取舍。
-标记基于名称特征匹配，**存在误伤可能**（实测同一 host 的两条源会被一标一不标），
-不要把标记当结论。
+它们**全部保留、没有被删除**（合并仓里 34 条），标记只是提示，请自行判断取舍。
+标记基于名称特征匹配，**存在误伤可能**（实测同一 host 的两条源会被一标一不标，
+详见 `cur/成人源清单.md`），不要把标记当结论。
+
+## 关于「需补类」
+
+少数 type3 站的 `csp_XXX` 类不在 `spider_special.jar` 里（32 个类）。
+这些站**仍然保留**在合并仓中，分组标为「特殊功能·需补类」，不会因为缺类被删。
 
 ## TVBox 用法
 
