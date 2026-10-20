@@ -39,27 +39,27 @@ code{background:#1d2129;padding:1px 6px;border-radius:4px;font-family:ui-monospa
 footer{color:var(--dim);font-size:12px;margin-top:36px;padding-top:16px;border-top:1px solid var(--line)}
 </style></head><body>
 <h1>点播源 / 直播源 整理报告</h1>
-<div class="sub">全部结论来自实测（TCP/TTFB 时延 + 真·分片吞吐 + 线路连通抽样）　生成于 2026-10-15 01:29</div>
+<div class="sub">全部结论来自实测（TCP/TTFB 时延 + 真·分片吞吐 + 线路连通抽样）　生成于 2026-10-21 01:36</div>
 
 <div class="cards">
-  <div class="card"><div class="v">50</div><div class="k">点播站（推荐版·已去重）</div></div>
+  <div class="card"><div class="v">53</div><div class="k">点播站（推荐版·已去重）</div></div>
   <div class="card"><div class="v">147</div><div class="k">点播站（完整版·含同源）</div></div>
   <div class="card"><div class="v">301</div><div class="k">直播频道 / 455 条线路</div></div>
-  <div class="card"><div class="v">113</div><div class="k">实测可播源（去重前）</div></div>
-  <div class="card"><div class="v">56%</div><div class="k">去重压缩率</div></div>
+  <div class="card"><div class="v">170</div><div class="k">实测可播源（去重前）</div></div>
+  <div class="card"><div class="v">69%</div><div class="k">去重压缩率</div></div>
 </div>
 
 <h2>一、筛选漏斗</h2>
 <div class="funnel">
-  <div class="step"><b>1728</b>候选采集端点</div><div class="arw">→</div>
-  <div class="step"><b>147</b>实测可播</div><div class="arw">→</div>
-  <div class="step"><b>113</b>非成人&amp;可播</div><div class="arw">→</div>
-  <div class="step"><b>50</b>内容去重后</div>
+  <div class="step"><b>1985</b>候选采集端点</div><div class="arw">→</div>
+  <div class="step"><b>209</b>实测可播</div><div class="arw">→</div>
+  <div class="step"><b>170</b>非成人&amp;可播</div><div class="arw">→</div>
+  <div class="step"><b>53</b>内容去重后</div>
 </div>
 <table><tr><th>探测结论</th><th class=n>数量</th><th>含义</th></tr>
-<tr><td>PLAY</td><td class=n>147</td><td>采集接口可用，首集可拉到真流</td></tr>
-<tr><td>DIRECT_DEAD</td><td class=n>97</td><td>接口通但给的播放地址全部拉不动</td></tr>
-<tr><td>L1_FAIL</td><td class=n>1238</td><td>接口本身连不上 / 已停服</td></tr>
+<tr><td>PLAY</td><td class=n>209</td><td>采集接口可用，首集可拉到真流</td></tr>
+<tr><td>DIRECT_DEAD</td><td class=n>95</td><td>接口通但给的播放地址全部拉不动</td></tr>
+<tr><td>L1_FAIL</td><td class=n>1435</td><td>接口本身连不上 / 已停服</td></tr>
 <tr><td>NOURL</td><td class=n>1</td><td>接口返回空片单</td></tr>
 <tr><td>NOT_CMS</td><td class=n>12</td><td>不是采集端点（指向 js/json），已剔除</td></tr>
 </table>
@@ -81,9 +81,9 @@ footer{color:var(--dim);font-size:12px;margin-top:36px;padding-top:16px;border-t
 
 <h2>三、合并仓（762 站 = 点播 + 成人标记 + 特殊功能）</h2>
 <div class="cards">
-  <div class="card"><div class="v">762</div><div class="k">合并仓站点总数</div></div>
+  <div class="card"><div class="v">777</div><div class="k">合并仓站点总数</div></div>
   <div class="card"><div class="v">615</div><div class="k">特殊功能站（type 3）</div></div>
-  <div class="card"><div class="v">147</div><div class="k">点播采集站（type 1）</div></div>
+  <div class="card"><div class="v">162</div><div class="k">点播站（type 1，含真直链+需解析器）</div></div>
   <div class="card"><div class="v">241</div><div class="k">spider jar 内置类覆盖（92%）</div></div>
   <div class="card"><div class="v">772</div><div class="k">站+直播（上限 1000）</div></div>
 </div>
@@ -101,8 +101,18 @@ footer{color:var(--dim);font-size:12px;margin-top:36px;padding-top:16px;border-t
 <tr><td>📤 群传插件</td><td class=n>1</td><td>—</td></tr>
 </table>
 <div class="note">
+<b>点播源分两类，别混看</b>：<br>
+· <b>真直链</b>（147 个）：播放地址是 m3u8/mp4，<b>不需要解析器</b>，桌面端也能播。
+  实测吞吐最高的：爱奇艺资源 1955KB/s、暴风影视 596KB/s。<br>
+· <b>需解析器</b>（15 个）：播放地址指向爱奇艺/芒果等<b>网页播放页</b>，
+  靠 parses 解析。手机/电视端可用，<b>桌面端会挂</b>，已单独分组标注。
+<br><b>本轮修正的一个测速假象</b>：旧方法只判断「能不能拉到字节」，
+把爱奇艺网页 HTML 当分片算，测出假的 646KB/s。现在必须先确认
+「拉到的是 m3u8 索引或 ftyp」，再算吞吐 —— 这类源的真实身份是「需解析器」。
+</div>
+<div class="note">
 <b>排序</b>：数组顺序 = TVBox 界面顺序 ——
-<b>点播放最前</b>（147 站，按首片延迟升序，最快的在最上面），
+<b>点播放最前</b>（162 站：147 个真直链按吞吐降序 + 15 个需解析器），
 后面才是特殊功能（网盘分享 → 网盘搜索 → 磁力P2P → 推送 → 4K弹幕 → AList），
 <b>缺类的垫最后</b>。常用功能不用翻。
 </div>
@@ -116,60 +126,63 @@ footer{color:var(--dim);font-size:12px;margin-top:36px;padding-top:16px;border-t
 不因为缺类就删 —— 要不要留由你决定。
 </div>
 
-<h2>四、点播源（推荐版 50 站，按吞吐排序）</h2>
+<h2>四、点播源（推荐版 53 站，按吞吐排序）</h2>
 <table>
 <tr><th>#</th><th>名称</th><th class=n>首片时延</th><th class=n>实测吞吐</th>
 <th class=n>分片成功</th><th class=n>直链</th><th>采集接口</th></tr>
-<tr><td>1</td><td>💝分享官源</td><td class=n>111ms</td><td class=n><span class='kb good'>753 KB/s</span></td><td class=n>4/4</td><td class=n>解析</td><td class=m>https://cj.jusj.top/api.php/provide/vod/?ac=list</td></tr>
-<tr><td>2</td><td>dd资源</td><td class=n>1321ms</td><td class=n><span class='kb good'>652 KB/s</span></td><td class=n>2/4</td><td class=n>是</td><td class=m>https://dd.jzcbed.xyz/api.php/provide/vod</td></tr>
-<tr><td>3</td><td>💥龙马💥</td><td class=n>117ms</td><td class=n><span class='kb good'>625 KB/s</span></td><td class=n>4/4</td><td class=n>解析</td><td class=m>http://jhysj.jiaheyy.top/api.php/provide/vod/?ac=list</td></tr>
-<tr><td>4</td><td>★魔法(直连)</td><td class=n>743ms</td><td class=n><span class='kb good'>464 KB/s</span></td><td class=n>4/4</td><td class=n>是</td><td class=m>http://madouse.la/api.php/provide/vod/</td></tr>
-<tr><td>5</td><td>🔞麻豆视频</td><td class=n>1110ms</td><td class=n><span class='kb good'>444 KB/s</span></td><td class=n>4/4</td><td class=n>是</td><td class=m>https://91md.me/api.php/provide/vod</td></tr>
-<tr><td>6</td><td>💥官源蓝光💥</td><td class=n>197ms</td><td class=n><span class='kb good'>426 KB/s</span></td><td class=n>4/4</td><td class=n>解析</td><td class=m>http://154.219.117.232:9981/jacloudapi.php/provide/vod/from/qq/?ac=list</td></tr>
-<tr><td>7</td><td>(vpn)森林资源</td><td class=n>778ms</td><td class=n><span class='kb good'>308 KB/s</span></td><td class=n>4/4</td><td class=n>是</td><td class=m>https://beiyong.slapibf.com/api.php/provide/vod/?ac=list</td></tr>
-<tr><td>8</td><td>❤淘片资源</td><td class=n>2744ms</td><td class=n><span class='kb good'>266 KB/s</span></td><td class=n>3/4</td><td class=n>是</td><td class=m>https://taopianapi.com/cjapi/mc/vod/json.html</td></tr>
-<tr><td>9</td><td>黑料资源</td><td class=n>1173ms</td><td class=n><span class='kb good'>258 KB/s</span></td><td class=n>4/4</td><td class=n>是</td><td class=m>https://heiliaozyapi.com/api.php/provide/vod/</td></tr>
-<tr><td>10</td><td>黑料资源网采集接口大全</td><td class=n>1363ms</td><td class=n><span class='kb good'>254 KB/s</span></td><td class=n>4/4</td><td class=n>是</td><td class=m>https://cfkua.wokaotianshi.eu.org/https://www.heiliaozyapi.com/api.php/provide/vod/</td></tr>
-<tr><td>11</td><td>🔞黑料资源</td><td class=n>1298ms</td><td class=n><span class='kb good'>246 KB/s</span></td><td class=n>4/4</td><td class=n>是</td><td class=m>https://www.heiliaozyapi.com/api.php/provide/vod</td></tr>
-<tr><td>12</td><td>♥森林(直连)</td><td class=n>790ms</td><td class=n><span class='kb good'>216 KB/s</span></td><td class=n>4/4</td><td class=n>是</td><td class=m>https://slapibf.com/api.php/provide/vod/?ac=list</td></tr>
-<tr><td>13</td><td>樱花•资源[直连]</td><td class=n>1379ms</td><td class=n><span class='kb good'>205 KB/s</span></td><td class=n>4/4</td><td class=n>是</td><td class=m>https://m3u8.apiyhzy.com/api.php/provide/vod/</td></tr>
-<tr><td>14</td><td>🔞森林┃资源</td><td class=n>780ms</td><td class=n><span class='kb good'>198 KB/s</span></td><td class=n>4/4</td><td class=n>是</td><td class=m>https://senlinzy2.com/api.php/provide/vod/</td></tr>
-<tr><td>15</td><td>暴风影视</td><td class=n>1316ms</td><td class=n><span class='kb good'>191 KB/s</span></td><td class=n>2/4</td><td class=n>是</td><td class=m>http://by.bfzyapi.com/api.php/provide/vod</td></tr>
-<tr><td>16</td><td>🔞桃花资源</td><td class=n>1390ms</td><td class=n><span class='kb good'>191 KB/s</span></td><td class=n>4/4</td><td class=n>是</td><td class=m>https://thzy1.me/api.php/provide/vod/?ac=list</td></tr>
-<tr><td>17</td><td>★奶香香(直连)</td><td class=n>1632ms</td><td class=n><span class='kb good'>189 KB/s</span></td><td class=n>4/4</td><td class=n>是</td><td class=m>https://naixxzy.com/api.php/provide/vod/?ac=list</td></tr>
-<tr><td>18</td><td>【9kg】大奶子资源</td><td class=n>1592ms</td><td class=n><span class='kb good'>185 KB/s</span></td><td class=n>4/4</td><td class=n>是</td><td class=m>https://apidanaizi.com/api.php/provide/vod</td></tr>
-<tr><td>19</td><td>🔞-奥斯卡-</td><td class=n>1138ms</td><td class=n><span class='kb good'>170 KB/s</span></td><td class=n>4/4</td><td class=n>是</td><td class=m>https://aosikazy.com/api.php/provide/vod</td></tr>
-<tr><td>20</td><td>🔞小鸡资源</td><td class=n>1381ms</td><td class=n><span class='kb good'>170 KB/s</span></td><td class=n>4/4</td><td class=n>是</td><td class=m>https://api.xiaojizy.live/provide/vod</td></tr>
-<tr><td>21</td><td>🚀奶香</td><td class=n>1169ms</td><td class=n><span class='kb good'>166 KB/s</span></td><td class=n>4/4</td><td class=n>是</td><td class=m>https://naixxzy.com/api.php/provide/vod/at/json</td></tr>
-<tr><td>22</td><td>★精品下(直连)</td><td class=n>1754ms</td><td class=n><span class='kb good'>164 KB/s</span></td><td class=n>4/4</td><td class=n>是</td><td class=m>http://www.jingpinx.com/api.php/provide/vod/?ac=list</td></tr>
-<tr><td>23</td><td>♥155(直连)</td><td class=n>773ms</td><td class=n><span class='kb good'>159 KB/s</span></td><td class=n>4/4</td><td class=n>是</td><td class=m>https://155api.com/api.php/provide/vod/?ac=list</td></tr>
-<tr><td>24</td><td>★精品下(直连)</td><td class=n>876ms</td><td class=n><span class='kb good'>155 KB/s</span></td><td class=n>4/4</td><td class=n>是</td><td class=m>https://www.jingpinx.com//api.php/provide/vod/?ac=list</td></tr>
-<tr><td>25</td><td>❤ckzy</td><td class=n>2899ms</td><td class=n><span class='kb good'>155 KB/s</span></td><td class=n>4/4</td><td class=n>是</td><td class=m>https://ckzy.me/api.php/provide/vod/?ac=list</td></tr>
-<tr><td>26</td><td>小鸡资源</td><td class=n>1146ms</td><td class=n><span class='kb mid'>147 KB/s</span></td><td class=n>4/4</td><td class=n>是</td><td class=m>https://api.xjzyapi.xyz/provide/vod</td></tr>
-<tr><td>27</td><td>奶香香资源站采集接口</td><td class=n>1119ms</td><td class=n><span class='kb mid'>143 KB/s</span></td><td class=n>4/4</td><td class=n>是</td><td class=m>https://cfkua.wokaotianshi.eu.org/https://Naixxzy.com/api.php/provide/vod/</td></tr>
-<tr><td>28</td><td>👭幸福资源👭</td><td class=n>778ms</td><td class=n><span class='kb mid'>125 KB/s</span></td><td class=n>4/4</td><td class=n>是</td><td class=m>https://json.xingba222.com/api.php/provide/vod/</td></tr>
-<tr><td>29</td><td>🔞杏吧资源</td><td class=n>1029ms</td><td class=n><span class='kb mid'>124 KB/s</span></td><td class=n>4/4</td><td class=n>是</td><td class=m>https://xingba222.com/api.php/provide/vod</td></tr>
-<tr><td>30</td><td>巨量</td><td class=n>1771ms</td><td class=n><span class='kb mid'>111 KB/s</span></td><td class=n>2/4</td><td class=n>是</td><td class=m>https://api.juliang.live/api/provide/vod/?ac=detail</td></tr>
-<tr><td>31</td><td>🦄国产资源｜🔞</td><td class=n>1522ms</td><td class=n><span class='kb mid'>104 KB/s</span></td><td class=n>4/4</td><td class=n>是</td><td class=m>https://fqzy.me//api.php/provide/vod/?ac=list</td></tr>
-<tr><td>32</td><td>[576ms|123] 🧿乐播┃资源</td><td class=n>544ms</td><td class=n><span class='kb mid'>90 KB/s</span></td><td class=n>3/4</td><td class=n>是</td><td class=m>https://lbapi9.com/api.php/provide/vod/at/json/?ac=list</td></tr>
-<tr><td>33</td><td>茅台</td><td class=n>1490ms</td><td class=n><span class='kb mid'>79 KB/s</span></td><td class=n>4/4</td><td class=n>是</td><td class=m>https://caiji.maotai999.vip/api.php/provide/vod/at/josn/</td></tr>
-<tr><td>34</td><td>辣椒(FQ)</td><td class=n>785ms</td><td class=n><span class='kb mid'>75 KB/s</span></td><td class=n>2/4</td><td class=n>是</td><td class=m>https://apilj.com/api.php/provide/vod/at/json/?ac=list</td></tr>
-<tr><td>35</td><td>🔞百货资源</td><td class=n>1908ms</td><td class=n><span class='kb mid'>74 KB/s</span></td><td class=n>4/4</td><td class=n>是</td><td class=m>https://ckbh1.xyz/api.php/provide/vod/?ac=list</td></tr>
-<tr><td>36</td><td>💕乐播(直连)</td><td class=n>779ms</td><td class=n><span class='kb mid'>73 KB/s</span></td><td class=n>3/4</td><td class=n>是</td><td class=m>https://lbapi9.com/api.php/provide/vod/?ac=list</td></tr>
-<tr><td>37</td><td>🔞鲨鱼资源</td><td class=n>1029ms</td><td class=n><span class='kb mid'>72 KB/s</span></td><td class=n>3/4</td><td class=n>是</td><td class=m>https://shayuapi.com/api.php/provide/vod/</td></tr>
-<tr><td>38</td><td>🔞坤坤┃资源</td><td class=n>885ms</td><td class=n><span class='kb low'>65 KB/s</span></td><td class=n>4/4</td><td class=n>是</td><td class=m>https://jkunzy.com/api.php/provide/vod/</td></tr>
-<tr><td>39</td><td>🔞百花</td><td class=n>505ms</td><td class=n><span class='kb low'>64 KB/s</span></td><td class=n>1/4</td><td class=n>是</td><td class=m>https://bhziyuan.com/api.php/provide/vod/?ac=list</td></tr>
-<tr><td>40</td><td>[322ms|我的] 豆瓣采集2</td><td class=n>1491ms</td><td class=n><span class='kb low'>64 KB/s</span></td><td class=n>3/4</td><td class=n>是</td><td class=m>https://caiji.dbzy5.com/api.php/provide/vod/from/dbm3u8/at/json/</td></tr>
-<tr><td>41</td><td>(vpn)辣椒采集</td><td class=n>777ms</td><td class=n><span class='kb low'>63 KB/s</span></td><td class=n>2/4</td><td class=n>是</td><td class=m>https://apilj.com/api.php/provide/vod/</td></tr>
-<tr><td>42</td><td>★废柴(直连)</td><td class=n>792ms</td><td class=n><span class='kb low'>63 KB/s</span></td><td class=n>2/4</td><td class=n>是</td><td class=m>http://fhapi9.com/api.php/provide/vod/?ac=list</td></tr>
-<tr><td>43</td><td>[2837KB/s|645ms|稳] 🍊鸡坤</td><td class=n>1332ms</td><td class=n><span class='kb low'>63 KB/s</span></td><td class=n>4/4</td><td class=n>是</td><td class=m>https://jkunzyapi.com/api.php/provide/vod/at/json</td></tr>
-<tr><td>44</td><td>[159ms|zy] 🍊黄仓</td><td class=n>1504ms</td><td class=n><span class='kb low'>61 KB/s</span></td><td class=n>4/4</td><td class=n>是</td><td class=m>https://hsckzy888.com/api.php/provide/vod/from/hsckm3u8/at/json</td></tr>
-<tr><td>45</td><td>[137ms|zy] 🍊蝙蝠</td><td class=n>808ms</td><td class=n><span class='kb low'>60 KB/s</span></td><td class=n>2/4</td><td class=n>是</td><td class=m>http://api.11bat.com/api.php/provide/vod/</td></tr>
-<tr><td>46</td><td>💕jkun(直连)</td><td class=n>1236ms</td><td class=n><span class='kb low'>59 KB/s</span></td><td class=n>4/4</td><td class=n>是</td><td class=m>https://jkunzyapi.com/api.php/provide/vod/?ac=list</td></tr>
-<tr><td>47</td><td>番号资源(卡切)</td><td class=n>755ms</td><td class=n><span class='kb low'>49 KB/s</span></td><td class=n>2/4</td><td class=n>是</td><td class=m>http://fhapi9.com/api.php/provide/vod/at/json</td></tr>
-<tr><td>48</td><td>♥滴滴(直连)</td><td class=n>1115ms</td><td class=n><span class='kb low'>39 KB/s</span></td><td class=n>3/4</td><td class=n>是</td><td class=m>https://api.ddapi.cc/api.php/provide/vod/?ac=list</td></tr>
-<tr><td>49</td><td>🔞老色P┃资源</td><td class=n>870ms</td><td class=n><span class='kb low'>35 KB/s</span></td><td class=n>1/4</td><td class=n>是</td><td class=m>https://laosebizy.com/api.php/provide/vod/</td></tr>
-<tr><td>50</td><td>💕老色逼(直连)</td><td class=n>1117ms</td><td class=n><span class='kb low'>30 KB/s</span></td><td class=n>1/4</td><td class=n>是</td><td class=m>https://apilsbzy1.com/api.php/provide/vod/?ac=list</td></tr>
+<tr><td>1</td><td>🐅老虎影视</td><td class=n>602ms</td><td class=n><span class='kb good'>499 KB/s</span></td><td class=n>3/3</td><td class=n>是</td><td class=m>http://ys.huyal.com/api.php/provide/vod/</td></tr>
+<tr><td>2</td><td>备用03·暴风</td><td class=n>585ms</td><td class=n><span class='kb good'>442 KB/s</span></td><td class=n>3/3</td><td class=n>是</td><td class=m>http://by.bfzyapi.com/api.php/provide/vod/at/json</td></tr>
+<tr><td>3</td><td>黑料资源</td><td class=n>1173ms</td><td class=n><span class='kb good'>258 KB/s</span></td><td class=n>3/3</td><td class=n>是</td><td class=m>https://heiliaozyapi.com/api.php/provide/vod/</td></tr>
+<tr><td>4</td><td>黑料资源网采集接口大全</td><td class=n>1363ms</td><td class=n><span class='kb good'>248 KB/s</span></td><td class=n>3/3</td><td class=n>是</td><td class=m>https://cfkua.wokaotianshi.eu.org/https://www.heiliaozyapi.com/api.php/provide/vod/</td></tr>
+<tr><td>5</td><td>影视•爬虫[直连]</td><td class=n>1240ms</td><td class=n><span class='kb good'>235 KB/s</span></td><td class=n>2/3</td><td class=n>是</td><td class=m>https://dy.7772888.xyz/api.php/tvbox</td></tr>
+<tr><td>6</td><td>🔞黑料资源</td><td class=n>1298ms</td><td class=n><span class='kb good'>221 KB/s</span></td><td class=n>3/3</td><td class=n>是</td><td class=m>https://www.heiliaozyapi.com/api.php/provide/vod</td></tr>
+<tr><td>7</td><td>52-淘片</td><td class=n>1064ms</td><td class=n><span class='kb good'>200 KB/s</span></td><td class=n>3/3</td><td class=n>是</td><td class=m>https://taopianapi.com/cjapi/mc/vod/json/m3u8.html</td></tr>
+<tr><td>8</td><td>【9kg】大奶子资源</td><td class=n>1592ms</td><td class=n><span class='kb good'>186 KB/s</span></td><td class=n>3/3</td><td class=n>是</td><td class=m>https://apidanaizi.com/api.php/provide/vod</td></tr>
+<tr><td>9</td><td>🔞桃花资源</td><td class=n>1390ms</td><td class=n><span class='kb good'>179 KB/s</span></td><td class=n>3/3</td><td class=n>是</td><td class=m>https://thzy1.me/api.php/provide/vod/?ac=list</td></tr>
+<tr><td>10</td><td>★精品下(直连)</td><td class=n>876ms</td><td class=n><span class='kb good'>175 KB/s</span></td><td class=n>3/3</td><td class=n>是</td><td class=m>https://www.jingpinx.com//api.php/provide/vod/?ac=list</td></tr>
+<tr><td>11</td><td>★精品下(直连)</td><td class=n>1754ms</td><td class=n><span class='kb good'>175 KB/s</span></td><td class=n>3/3</td><td class=n>是</td><td class=m>http://www.jingpinx.com/api.php/provide/vod/?ac=list</td></tr>
+<tr><td>12</td><td>樱花•资源[直连]</td><td class=n>1379ms</td><td class=n><span class='kb good'>168 KB/s</span></td><td class=n>3/3</td><td class=n>是</td><td class=m>https://m3u8.apiyhzy.com/api.php/provide/vod/</td></tr>
+<tr><td>13</td><td>🔞小鸡资源</td><td class=n>1381ms</td><td class=n><span class='kb good'>159 KB/s</span></td><td class=n>3/3</td><td class=n>是</td><td class=m>https://api.xiaojizy.live/provide/vod</td></tr>
+<tr><td>14</td><td>❤ckzy</td><td class=n>2899ms</td><td class=n><span class='kb good'>158 KB/s</span></td><td class=n>3/3</td><td class=n>是</td><td class=m>https://ckzy.me/api.php/provide/vod/?ac=list</td></tr>
+<tr><td>15</td><td>小鸡资源</td><td class=n>1146ms</td><td class=n><span class='kb good'>152 KB/s</span></td><td class=n>2/3</td><td class=n>是</td><td class=m>https://api.xjzyapi.xyz/provide/vod</td></tr>
+<tr><td>16</td><td>ck采集</td><td class=n>1443ms</td><td class=n><span class='kb good'>150 KB/s</span></td><td class=n>3/3</td><td class=n>是</td><td class=m>http://ckzy.me/api.php/provide/vod/</td></tr>
+<tr><td>17</td><td>(vpn)辣椒采集</td><td class=n>777ms</td><td class=n><span class='kb mid'>146 KB/s</span></td><td class=n>2/2</td><td class=n>是</td><td class=m>https://apilj.com/api.php/provide/vod/</td></tr>
+<tr><td>18</td><td>辣椒(FQ)</td><td class=n>785ms</td><td class=n><span class='kb mid'>133 KB/s</span></td><td class=n>2/2</td><td class=n>是</td><td class=m>https://apilj.com/api.php/provide/vod/at/json/?ac=list</td></tr>
+<tr><td>19</td><td>成人06</td><td class=n>1377ms</td><td class=n><span class='kb mid'>131 KB/s</span></td><td class=n>2/2</td><td class=n>是</td><td class=m>http://apilj.com/api.php/provide/vod/at/json/</td></tr>
+<tr><td>20</td><td>备用09·闪电</td><td class=n>1359ms</td><td class=n><span class='kb mid'>130 KB/s</span></td><td class=n>2/2</td><td class=n>是</td><td class=m>https://sdzyapi.com/api.php/provide/vod/</td></tr>
+<tr><td>21</td><td>★奶香香(直连)</td><td class=n>1632ms</td><td class=n><span class='kb mid'>123 KB/s</span></td><td class=n>2/2</td><td class=n>是</td><td class=m>https://naixxzy.com/api.php/provide/vod/?ac=list</td></tr>
+<tr><td>22</td><td>奶香香资源站采集接口</td><td class=n>1119ms</td><td class=n><span class='kb mid'>118 KB/s</span></td><td class=n>2/2</td><td class=n>是</td><td class=m>https://cfkua.wokaotianshi.eu.org/https://Naixxzy.com/api.php/provide/vod/</td></tr>
+<tr><td>23</td><td>🚀奶香</td><td class=n>1169ms</td><td class=n><span class='kb mid'>110 KB/s</span></td><td class=n>2/2</td><td class=n>是</td><td class=m>https://naixxzy.com/api.php/provide/vod/at/json</td></tr>
+<tr><td>24</td><td>🔞老色P┃资源</td><td class=n>870ms</td><td class=n><span class='kb mid'>105 KB/s</span></td><td class=n>2/2</td><td class=n>是</td><td class=m>https://laosebizy.com/api.php/provide/vod/</td></tr>
+<tr><td>25</td><td>🔞百货资源</td><td class=n>1908ms</td><td class=n><span class='kb mid'>103 KB/s</span></td><td class=n>3/3</td><td class=n>是</td><td class=m>https://ckbh1.xyz/api.php/provide/vod/?ac=list</td></tr>
+<tr><td>26</td><td>♥155(直连)</td><td class=n>773ms</td><td class=n><span class='kb mid'>102 KB/s</span></td><td class=n>2/2</td><td class=n>是</td><td class=m>https://155api.com/api.php/provide/vod/?ac=list</td></tr>
+<tr><td>27</td><td>💕老色逼(直连)</td><td class=n>1117ms</td><td class=n><span class='kb mid'>100 KB/s</span></td><td class=n>2/2</td><td class=n>是</td><td class=m>https://apilsbzy1.com/api.php/provide/vod/?ac=list</td></tr>
+<tr><td>28</td><td>[159ms|zy] 🍊黄仓</td><td class=n>1504ms</td><td class=n><span class='kb mid'>100 KB/s</span></td><td class=n>2/2</td><td class=n>是</td><td class=m>https://hsckzy888.com/api.php/provide/vod/from/hsckm3u8/at/json</td></tr>
+<tr><td>29</td><td>玉兔 | 采集</td><td class=n>995ms</td><td class=n><span class='kb mid'>89 KB/s</span></td><td class=n>2/2</td><td class=n>是</td><td class=m>https://apiyutu.com/api.php/provide/vod/</td></tr>
+<tr><td>30</td><td>💞火速资源💞</td><td class=n>1277ms</td><td class=n><span class='kb mid'>80 KB/s</span></td><td class=n>2/2</td><td class=n>是</td><td class=m>https://api.huosuapi.cc/api.php/provide/vod/</td></tr>
+<tr><td>31</td><td>(vpn)森林资源</td><td class=n>778ms</td><td class=n><span class='kb mid'>75 KB/s</span></td><td class=n>2/5</td><td class=n>是</td><td class=m>https://beiyong.slapibf.com/api.php/provide/vod/?ac=list</td></tr>
+<tr><td>32</td><td>🦄国产资源｜🔞</td><td class=n>1522ms</td><td class=n><span class='kb mid'>73 KB/s</span></td><td class=n>1/8</td><td class=n>是</td><td class=m>https://fqzy.me//api.php/provide/vod/?ac=list</td></tr>
+<tr><td>33</td><td>♥森林(直连)</td><td class=n>790ms</td><td class=n><span class='kb low'>68 KB/s</span></td><td class=n>2/5</td><td class=n>是</td><td class=m>https://slapibf.com/api.php/provide/vod/?ac=list</td></tr>
+<tr><td>34</td><td>🔞百花</td><td class=n>505ms</td><td class=n><span class='kb low'>64 KB/s</span></td><td class=n>2/5</td><td class=n>是</td><td class=m>https://bhziyuan.com/api.php/provide/vod/?ac=list</td></tr>
+<tr><td>35</td><td>番号资源(卡切)</td><td class=n>755ms</td><td class=n><span class='kb low'>63 KB/s</span></td><td class=n>2/3</td><td class=n>是</td><td class=m>http://fhapi9.com/api.php/provide/vod/at/json</td></tr>
+<tr><td>36</td><td>💕乐播(直连)</td><td class=n>779ms</td><td class=n><span class='kb low'>63 KB/s</span></td><td class=n>2/5</td><td class=n>是</td><td class=m>https://lbapi9.com/api.php/provide/vod/?ac=list</td></tr>
+<tr><td>37</td><td>🔞森林┃资源</td><td class=n>780ms</td><td class=n><span class='kb low'>63 KB/s</span></td><td class=n>2/5</td><td class=n>是</td><td class=m>https://senlinzy2.com/api.php/provide/vod/</td></tr>
+<tr><td>38</td><td>★废柴(直连)</td><td class=n>792ms</td><td class=n><span class='kb low'>63 KB/s</span></td><td class=n>2/3</td><td class=n>是</td><td class=m>http://fhapi9.com/api.php/provide/vod/?ac=list</td></tr>
+<tr><td>39</td><td>[576ms|123] 🧿乐播┃资源</td><td class=n>544ms</td><td class=n><span class='kb low'>61 KB/s</span></td><td class=n>2/5</td><td class=n>是</td><td class=m>https://lbapi9.com/api.php/provide/vod/at/json/?ac=list</td></tr>
+<tr><td>40</td><td>🔞-奥斯卡-</td><td class=n>1138ms</td><td class=n><span class='kb low'>61 KB/s</span></td><td class=n>2/2</td><td class=n>是</td><td class=m>https://aosikazy.com/api.php/provide/vod</td></tr>
+<tr><td>41</td><td>🎥┃红牛┃资源</td><td class=n>38ms</td><td class=n><span class='kb low'>60 KB/s</span></td><td class=n>3/3</td><td class=n>解析</td><td class=m>https://www.hongniuzy2.com/api.php/provide/vod/</td></tr>
+<tr><td>42</td><td>💕jkun(直连)</td><td class=n>1236ms</td><td class=n><span class='kb low'>56 KB/s</span></td><td class=n>1/8</td><td class=n>是</td><td class=m>https://jkunzyapi.com/api.php/provide/vod/?ac=list</td></tr>
+<tr><td>43</td><td>🦋 艾旦影视采集🔞</td><td class=n>1526ms</td><td class=n><span class='kb low'>54 KB/s</span></td><td class=n>3/3</td><td class=n>是</td><td class=m>https://lovedan.net/api.php/provide/vod/</td></tr>
+<tr><td>44</td><td>[2837KB/s|645ms|稳] 🍊鸡坤</td><td class=n>1332ms</td><td class=n><span class='kb low'>53 KB/s</span></td><td class=n>1/8</td><td class=n>是</td><td class=m>https://jkunzyapi.com/api.php/provide/vod/at/json</td></tr>
+<tr><td>45</td><td>🔞souavZY</td><td class=n>1658ms</td><td class=n><span class='kb low'>51 KB/s</span></td><td class=n>2/2</td><td class=n>是</td><td class=m>https://api.souavzyw.net/api.php/provide/vod</td></tr>
+<tr><td>46</td><td>巨量</td><td class=n>1771ms</td><td class=n><span class='kb low'>49 KB/s</span></td><td class=n>3/9</td><td class=n>是</td><td class=m>https://api.juliang.live/api/provide/vod/?ac=detail</td></tr>
+<tr><td>47</td><td>🔞坤坤┃资源</td><td class=n>885ms</td><td class=n><span class='kb low'>43 KB/s</span></td><td class=n>1/8</td><td class=n>是</td><td class=m>https://jkunzy.com/api.php/provide/vod/</td></tr>
+<tr><td>48</td><td>🎬360 资源</td><td class=n>1237ms</td><td class=n><span class='kb low'>43 KB/s</span></td><td class=n>2/2</td><td class=n>是</td><td class=m>https://360zyzz.com/api.php/provide/vod</td></tr>
+<tr><td>49</td><td>♥滴滴(直连)</td><td class=n>1115ms</td><td class=n><span class='kb low'>30 KB/s</span></td><td class=n>2/7</td><td class=n>是</td><td class=m>https://api.ddapi.cc/api.php/provide/vod/?ac=list</td></tr>
+<tr><td>50</td><td>成人07</td><td class=n>191ms</td><td class=n><span class='kb low'>0 KB/s</span></td><td class=n>0/0</td><td class=n>是</td><td class=m>http://91md.me/api.php/provide/vod/</td></tr>
+<tr><td>51</td><td>🔞杏吧资源</td><td class=n>1029ms</td><td class=n><span class='kb low'>0 KB/s</span></td><td class=n>0/8</td><td class=n>是</td><td class=m>https://xingba222.com/api.php/provide/vod</td></tr>
+<tr><td>52</td><td>🔞鲨鱼资源</td><td class=n>1029ms</td><td class=n><span class='kb low'>0 KB/s</span></td><td class=n>0/0</td><td class=n>是</td><td class=m>https://shayuapi.com/api.php/provide/vod/</td></tr>
+<tr><td>53</td><td>🔞麻豆视频</td><td class=n>1110ms</td><td class=n><span class='kb low'>0 KB/s</span></td><td class=n>0/0</td><td class=n>是</td><td class=m>https://91md.me/api.php/provide/vod</td></tr>
 </table>
 <div class="note">「直链 = 是」表示该源返回的是 .m3u8/.mp4 直链，<b>不需要解析器</b>，最稳。
 「解析」类靠 TVBox 内置的 m3u8 解析，能用但多一层变量。
@@ -181,16 +194,16 @@ footer{color:var(--dim);font-size:12px;margin-top:36px;padding-top:16px;border-t
 </div>
 <h3 style="font-size:14px;margin:22px 0 8px;color:var(--dim)">上游清单实测（只保留可达率 ≥25% 的）</h3>
 <table><tr><th>#</th><th>清单</th><th class=n>频道数</th><th class=n>抽样可达</th><th class=n>时延</th></tr>
-<tr><td>1</td><td>央视卫视地方(vbskycn)</td><td class=n>526</td><td class=n>100.0%</td><td class=n>280ms</td></tr>
-<tr><td>2</td><td>斗鱼一起看</td><td class=n>945</td><td class=n>100.0%</td><td class=n>2003ms</td></tr>
-<tr><td>3</td><td>虎牙一起看</td><td class=n>1116</td><td class=n>100.0%</td><td class=n>2215ms</td></tr>
-<tr><td>4</td><td>中国台湾(iptv-org)</td><td class=n>52</td><td class=n>62.5%</td><td class=n>2149ms</td></tr>
-<tr><td>5</td><td>YanG-1989 聚合</td><td class=n>123</td><td class=n>50.0%</td><td class=n>4517ms</td></tr>
-<tr><td>6</td><td>央视卫视·自动测活(Guovin/tv)</td><td class=n>1619</td><td class=n>37.5%</td><td class=n>938ms</td></tr>
-<tr><td>7</td><td>央视卫视·自动测活(备用)</td><td class=n>1619</td><td class=n>37.5%</td><td class=n>1183ms</td></tr>
-<tr><td>8</td><td>大陆频道(iptv-org)</td><td class=n>508</td><td class=n>25.0%</td><td class=n>53ms</td></tr>
-<tr><td>9</td><td>大陆频道(iptv-org)·镜像</td><td class=n>508</td><td class=n>25.0%</td><td class=n>120ms</td></tr>
-<tr><td>10</td><td>中国香港(iptv-org)</td><td class=n>26</td><td class=n>25.0%</td><td class=n>2798ms</td></tr>
+<tr><td>1</td><td>央视卫视地方(vbskycn)</td><td class=n>522</td><td class=n>100.0%</td><td class=n>481ms</td></tr>
+<tr><td>2</td><td>虎牙一起看</td><td class=n>1147</td><td class=n>100.0%</td><td class=n>1514ms</td></tr>
+<tr><td>3</td><td>斗鱼一起看</td><td class=n>950</td><td class=n>100.0%</td><td class=n>1551ms</td></tr>
+<tr><td>4</td><td>中国台湾(iptv-org)</td><td class=n>53</td><td class=n>62.5%</td><td class=n>1175ms</td></tr>
+<tr><td>5</td><td>YanG-1989 聚合</td><td class=n>123</td><td class=n>50.0%</td><td class=n>2801ms</td></tr>
+<tr><td>6</td><td>中国香港(iptv-org)</td><td class=n>25</td><td class=n>37.5%</td><td class=n>256ms</td></tr>
+<tr><td>7</td><td>央视卫视·自动测活(Guovin/tv)</td><td class=n>1619</td><td class=n>37.5%</td><td class=n>1217ms</td></tr>
+<tr><td>8</td><td>央视卫视·自动测活(备用)</td><td class=n>1619</td><td class=n>37.5%</td><td class=n>1243ms</td></tr>
+<tr><td>9</td><td>大陆频道(iptv-org)</td><td class=n>508</td><td class=n>25.0%</td><td class=n>256ms</td></tr>
+<tr><td>10</td><td>大陆频道(iptv-org)·镜像</td><td class=n>508</td><td class=n>25.0%</td><td class=n>271ms</td></tr>
 </table>
 <div class="note">
 做法：把 10 个上游清单合并 → 按频道名归组（<code>CCTV1</code> 与 <code>CCTV5</code> 分开，
@@ -271,7 +284,7 @@ footer{color:var(--dim);font-size:12px;margin-top:36px;padding-top:16px;border-t
 <br>入口里 4 条源<b>按新版优先排序</b>：① 新版精简 → ② 新版完整 → ③④ 旧版降级备份。
 前面的拉不动会自动往后面落。
 <br><br><b>想直接指定单条</b>：
-<br>· 新版精简（50 站，已去重）：<code>.../main/cur/vod_slim.json</code>
+<br>· 新版精简（53 站，已去重）：<code>.../main/cur/vod_slim.json</code>
 <br>· 新版完整（147 站，全部可播源）：<code>.../main/cur/vod_full.json</code>
 <br>· 旧版备份（5646 / 6033 站）：<code>.../main/backup/single.json</code> 或 <code>single_full.json</code>
 <br><br><b>只要直播</b>：播放器里直接打开 <code>live.m3u</code>（VLC / PotPlayer / 电视端都能直接吃），
@@ -282,13 +295,13 @@ footer{color:var(--dim);font-size:12px;margin-top:36px;padding-top:16px;border-t
 </div>
 <div class="note warn">
 <b>已知限制</b>：<br>
-· 站点可用性随上游采集接口变化，本报告是 2026-10-15 01:29 的快照，不保证长期有效。<br>
+· 站点可用性随上游采集接口变化，本报告是 2026-10-21 01:36 的快照，不保证长期有效。<br>
 · 已按名称特征<b>标记</b>成人疑似源（加 <code>**</code> 前缀 + <code>adultFlag:true</code> 字段），
 但<b>一律保留、不做删除</b> —— 是否成人由你自己判断。标记有误伤可能
 （实测同一 host 两条一标一不标），仅作提示，请自行复核。<br>
-· <b>关于「站点数 ≤ 1000」</b>：这是上限而不是目标。当前 50 站（推荐版）/ 147 站（完整版），
-都远低于上限 —— 因为全网实测下来<b>真正能播的只有 113 个</b>，把 1000 灌满只会灌进死源。
-真想要更大站数，方向是「把 113 个可播源全部保留」（= <code>vod_full.json</code>），而不是继续加候选。
+· <b>关于「站点数 ≤ 1000」</b>：这是上限而不是目标。当前 53 站（推荐版）/ 147 站（完整版），
+都远低于上限 —— 因为全网实测下来<b>真正能播的只有 170 个</b>，把 1000 灌满只会灌进死源。
+真想要更大站数，方向是「把 170 个可播源全部保留」（= <code>vod_full.json</code>），而不是继续加候选。
 </div>
 
 <footer>数据文件：<code>_vod_probe2.json</code>（全量探测）·<code>_vod_final4.json</code>（终选）·
